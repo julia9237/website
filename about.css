@@ -13,6 +13,14 @@ html {
     background-color: #212121;
 }
 
+body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
 body header.hihello {
     font-weight: bold;
     background-color: #424242;
@@ -21,11 +29,18 @@ body header.hihello {
 }
 
 section.about h3 {
-    color: #ff649d
+    color: #ff649d;
+}
+
+section.about h3.h {
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 section.about header {
     color: #ff649d;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 section.about a {
@@ -87,20 +102,6 @@ nav.navig a:link {
 
 nav.navig a:hover {
     text-decoration: underline;
-}
-
-body {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-}
-
-.memeVideo {
-	display: block;
-	width: 50%;
-	margin: 0 auto; 
 }
 
 input:checked + a {
