@@ -4,7 +4,7 @@ footer, header, main, nav {
     display:block;
 }
 
-html, body, h1, h3, a, p, footer, header, main, nav {
+html, body, h1, h3, a, p, footer, header, nav {
     padding:0;
     margin:0;
 }
