@@ -36,3 +36,9 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
+
+.memeVideo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
