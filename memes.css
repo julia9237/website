@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 footer, header, main, nav {
     display:block;
 }
@@ -10,6 +12,7 @@ html, body, h1, h3, a, footer, header, nav {
 }
 
 html {
+    scrollbar-color: #ff75a8 #333333;
     background-color: #212121;
 }
 
