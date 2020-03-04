@@ -107,4 +107,6 @@ body {
 	margin: 0 auto; 
 }
 
-input:checked + a { display: none; }
+input:checked + a {
+    display: none;
+}
