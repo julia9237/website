@@ -25,16 +25,28 @@ body header {
 
 .navig {
     background-color: #333333;
-    margin-top: 1px;
+    margin-top: 2px;
     padding: 5px 5px;
     font-size: 24px;
 }
 
-.sectionGeneric {
+.about header {
+    color: #ff4086;
+}
+
+.about a {
+    padding-left: 30px;
+    padding-right: 30px;
+    display:block;
+}
+
+.about {
     color: #ffb8d2;
     background-color: #333333;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav a {
