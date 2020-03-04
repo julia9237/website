@@ -3,3 +3,36 @@
 footer, header, main, nav {
     display:block;
 }
+
+html, body, h1, h3, a, p, footer, header, main, nav {
+    padding:0;
+    margin:0;
+}
+
+html {
+    background-color: #212121;
+}
+
+.hihello {
+    background-color: #424242;
+    color: #ff75a8;
+    padding: 10px 20px;
+}
+
+.navig {
+    background-color: #333333;
+    margin-top: 1px;
+    padding: 5px 5px;
+}
+
+nav a {
+    color: #ff4086;
+}
+
+body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
