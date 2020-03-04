@@ -4,13 +4,17 @@ footer, header, main, nav {
     display:block;
 }
 
-html, body, h1, h3, a, p, footer, header, nav {
+html, body, h1, h3, a, footer, header, nav {
     padding:0;
     margin:0;
 }
 
 html {
     background-color: #212121;
+}
+
+body header {
+    font-weight: bold;
 }
 
 .hihello {
@@ -23,6 +27,14 @@ html {
     background-color: #333333;
     margin-top: 1px;
     padding: 5px 5px;
+    font-size: 24px;
+}
+
+.sectionGeneric {
+    color: #ffb8d2;
+    background-color: #333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 nav a {
