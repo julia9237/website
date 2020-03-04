@@ -23,8 +23,13 @@ html, body, h1, h3, a, footer, header, nav {
     }
 }
 
+@-moz-document url-prefix() {
+    html{
+        scrollbar-color: #ff75a8 #333333;
+    }
+}
+
 html {
-    scrollbar-color: #ff75a8 #333333;
     background-color: #212121;
 }
 
