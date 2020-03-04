@@ -13,35 +13,30 @@ html {
     background-color: #212121;
 }
 
-body header {
+body header.hihello {
     font-weight: bold;
-}
-
-.hihello {
     background-color: #424242;
     color: #ff75a8;
     padding: 10px 20px;
 }
 
-.navig {
-    background-color: #333333;
-    margin-top: 5px;
-    padding: 10px 10px;
-    font-size: 24px;
-    margin-bottom: 5px;
+section.about h3 {
+    color: #ff649d
 }
 
-.about header {
+section.about header {
     color: #ff649d;
 }
 
-.about a {
+section.about a {
     padding-left: 30px;
     padding-right: 30px;
     display:block;
 }
 
-.about {
+section.about {
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #ffb8d2;
     background-color: #333333;
     padding-top: 5px;
@@ -52,7 +47,7 @@ body header {
 
 nav.aboutLinks a{
     font-weight: bold;
-    color: #ff8ab5;
+    color: #ffb8d2;
 }
 
 nav.aboutLinks a:link{
@@ -64,7 +59,7 @@ nav.aboutLinks a:hover {
 }
 
 nav.aboutLinks label{
-    color: #ff8ab5;
+    color: #ffb8d2;
     padding-left: 30px;
     font-weight: bold;
 }

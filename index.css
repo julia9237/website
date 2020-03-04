@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+footer, header, main, nav {
+    display:block;
+}
+
+html, body, h1, h3, a, footer, header, nav {
+    padding:0;
+    margin:0;
+}
+
+html {
+    background-color: #212121;
+}
+
+body header {
+    font-weight: bold;
+    background-color: #424242;
+    color: #ff75a8;
+    padding: 10px 20px;
+}
+
+.navig {
+    background-color: #333333;
+    margin-top: 5px;
+    padding: 10px 10px;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.about header {
+    color: #ff649d;
+}
+
+.about a {
+    padding-left: 30px;
+    padding-right: 30px;
+    display:block;
+}
+
+.about {
+    color: #ffb8d2;
+    background-color: #333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav.aboutLinks a{
+    font-weight: bold;
+    color: #ff8ab5;
+}
+
+nav.aboutLinks a:link{
+    text-decoration: none;
+}
+
+nav.aboutLinks a:hover {
+    text-decoration: underline;
+}
+
+nav.aboutLinks label{
+    color: #ff8ab5;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+nav.aboutLinks label:hover{
+    text-decoration: underline;
+}
+
+nav.aboutLinks a.discordTag{
+    padding-left: 50px;
+}
+
+nav.aboutLinks a.discordTag:hover{
+    text-decoration: none;
+}
+
+nav.navig a {
+    text-decoration: underline;
+    color: #ff4086;
+}
+
+nav.navig a:link {
+    text-decoration: none;
+}
+
+nav.navig a:hover {
+    text-decoration: underline;
+}
+
+body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.memeVideo {
+	display: block;
+	width: 50%;
+	margin: 0 auto; 
+}
+
+input:checked + a {
+    display: none;
+}
