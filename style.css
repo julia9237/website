@@ -50,21 +50,47 @@ body header {
 }
 
 nav.aboutLinks a{
+    font-weight: bold;
     color: #ff8ab5;
+}
+
+nav.aboutLinks a:link{
+    text-decoration: none;
+}
+
+nav.aboutLinks a:hover {
+    text-decoration: underline;
 }
 
 nav.aboutLinks label{
     color: #ff8ab5;
     padding-left: 30px;
-    font-style: underline;
+    font-weight: bold;
+}
+
+nav.aboutLinks label:hover{
+    text-decoration: underline;
 }
 
 nav.aboutLinks a.discordTag{
     padding-left: 40px;
 }
 
+nav.aboutLinks a.discordTag:hover{
+    text-decoration: none;
+}
+
 nav.navig a {
+    text-decoration: underline;
     color: #ff4086;
+}
+
+nav.navig a:link {
+    text-decoration: none;
+}
+
+nav.navig a:hover {
+    text-decoration: underline;
 }
 
 body {
