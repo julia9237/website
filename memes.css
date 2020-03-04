@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+footer, header, main, nav {
+    display:block;
+}
+
+html, body, h1, h3, a, footer, header, nav {
+    padding:0;
+    margin:0;
+}
+
+html {
+    background-color: #212121;
+}
+
+body header {
+    font-weight: bold;
+    background-color: #424242;
+    color: #ff75a8;
+    padding: 10px 20px;
+}
+
+.memeVideo {
+	display: block;
+	margin: 0 auto; 
+}

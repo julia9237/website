@@ -99,12 +99,6 @@ body {
     font-size: 16px;
 }
 
-.memeVideo {
-	display: block;
-	width: 50%;
-	margin: 0 auto; 
-}
-
 input:checked + a {
     display: none;
 }
