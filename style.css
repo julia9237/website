@@ -25,13 +25,13 @@ body header {
 
 .navig {
     background-color: #333333;
-    margin-top: 2px;
+    margin-top: 3px;
     padding: 5px 5px;
     font-size: 24px;
 }
 
 .about header {
-    color: #ff4086;
+    color: #ff649d;
 }
 
 .about a {
@@ -49,7 +49,21 @@ body header {
     padding-right: 20px;
 }
 
-nav a {
+nav.aboutLinks a{
+    color: #ff8ab5;
+}
+
+nav.aboutLinks label{
+    color: #ff8ab5;
+    padding-left: 30px;
+    font-style: underline;
+}
+
+nav.aboutLinks a.discordTag{
+    padding-left: 40px;
+}
+
+nav.navig a {
     color: #ff4086;
 }
 
@@ -66,3 +80,5 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+input:checked + a { display: none; }
