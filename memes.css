@@ -11,6 +11,17 @@ html, body, h1, h3, a, footer, header, nav {
     margin:0;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    ::-webkit-scrollbar {
+        background-color: #333333;
+    }
+    ::-webkit-scrollbar-button {
+        background-color: #111111;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #ff75a8;
+    }
+}
 html {
     scrollbar-color: #ff75a8 #333333;
     background-color: #212121;
