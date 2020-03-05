@@ -33,11 +33,12 @@ html {
     background-color: #212121;
 }
 
-body header {
-    font-weight: bold;
-    background-color: #424242;
-    color: #ff75a8;
-    padding: 10px 20px;
+.navig {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .memeVideo {
