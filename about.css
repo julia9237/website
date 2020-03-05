@@ -91,27 +91,6 @@ nav.aboutLinks a.discordTag:hover{
     text-decoration: none;
 }
 
-.navig {
-    background-color: #333333;
-    margin-top: 5px;
-    padding: 10px 10px;
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-nav.navig a {
-    text-decoration: underline;
-    color: #ff4086;
-}
-
-nav.navig a:link {
-    text-decoration: none;
-}
-
-nav.navig a:hover {
-    text-decoration: underline;
-}
-
 input:checked + a {
     display: none;
 }
