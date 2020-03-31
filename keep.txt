@@ -1,13 +1,4 @@
-@charset "UTF-8";
-
-footer, header, main, nav {
-    display:block;
-}
-
-html, body, h1, h3, a, footer, header, nav {
-    padding:0;
-    margin:0;
-}
+My name is Bence, I am a wannabe programmer. I have experience with Python, C++, Lua, Sourcepawn, TF2 Scripting,HTML5 and CSS3. Most of my programming knowledge is from Youtube tutorials tho. You can find my stuff on Github page.
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     ::-webkit-scrollbar {
@@ -25,21 +16,4 @@ html, body, h1, h3, a, footer, header, nav {
     html{
         scrollbar-color: #ff75a8 #333333;
     }
-}
-
-html {
-    background-color: #212121;
-}
-
-.navig {
-    width: 380px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.memeVideo {
-	display: block;
-	margin: 0 auto; 
 }
