@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+html, div {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    background-color: #111111;
+}
+
+div#top {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 22%;
+    margin-right: 22%;
+    background-color: #272727;
+    text-align: center;
+}
+
+div#top p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 44px;
+    color: #f5548a;
+}
+
+div#news {
+    margin-top: -20px;
+    margin-bottom: 4px;
+    margin-left: 22%;
+    margin-right: 33%;
+    background-color: #272727;
+}
+
+div#news p#h {
+    margin-left: 4%;
+    font-size: 32px;
+    color: #f5548a
+}
