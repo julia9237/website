@@ -54,21 +54,20 @@ div#top p {
 }
 
 div#news {
+    padding: 4px;
     margin-right: 33%;
 }
 
 div#news p#header {
     margin-left: 2%;
-    font-size: 33px;
+    font-size: 28px;
     color: #f5548a;
 }
 
 img#construct
 {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: fit-content;
+    margin: 0px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -87,4 +86,30 @@ img#construct
     {
         font-size: 66px;
     }
+}
+
+div#memes
+{
+    padding: 0.5%;
+}
+
+div#memes video
+{
+    position: relative;
+    width: 32.7%;
+    max-width: 32.7%;
+    min-width: 32.7%;
+}
+
+div#navbar
+{
+    padding-left: 1%;
+    padding-bottom: 4px;
+    text-align: left;
+}
+div#navbar a
+{
+    margin: 4px;
+    color: #f5548a;
+    font-size: 33px;
 }
