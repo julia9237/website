@@ -93,13 +93,18 @@ div#navbar a
     font-size: 33px;
 }
 
+div#top p#school
+{
+    color: #ffffff;
+}
+
 div#school p
 {
     margin: 0;
     padding-left: 12px;
     padding-right: 12px;
     font-size: 33px;
-    color: #f5548a;
+    color: #ffffff;
 }
 
 div#school p#school-sign
