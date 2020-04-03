@@ -43,12 +43,7 @@ div#top, div#news
 
 div#top {
     text-align: center;
-}
-
-div#top p {
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 44px;
     color: #f5548a;
 }
@@ -70,22 +65,6 @@ img#construct
     margin: 0px;
     max-width: 100%;
     max-height: 100%;
-}
-
-@media (max-width: 1020px) {
-    html, div, p , div#news, div#top
-    {
-        margin-left: 0pt;
-        margin-right: 0pt;
-    }
-    div#top p
-    {
-        font-size: 88px;
-    }
-    div#news p#h
-    {
-        font-size: 66px;
-    }
 }
 
 div#memes
@@ -112,4 +91,55 @@ div#navbar a
     margin: 4px;
     color: #f5548a;
     font-size: 33px;
+}
+
+div#school p
+{
+    margin: 0;
+    padding: 12px;
+    font-size: 33px;
+    color: #f5548a;
+}
+
+div#school p#school-sign
+{
+    margin-left: 10%;
+}
+
+div#footer
+{
+    margin-top: 5pt;
+    text-align: center;
+    font-size: 120%;
+}
+
+div#footer p#secret-text
+{
+    margin: 0;
+    text-align: right;
+    color: #303030;
+}
+
+@media (max-width: 1026px) {
+    html, div, p , div#news, div#top, div#footer, div#school
+    {
+        margin-left: 0pt;
+        margin-right: 0pt;
+    }
+    div#top p
+    {
+        font-size: 88px;
+    }
+    div#news p#h
+    {
+        font-size: 66px;
+    }
+    div#school p
+    {
+        font-size: 55px;
+    }
+    div#footer p#secret-text
+    {
+        font-size: 150%;
+    }
 }
