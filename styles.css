@@ -96,13 +96,15 @@ div#navbar a
 div#school p
 {
     margin: 0;
-    padding: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     font-size: 33px;
     color: #f5548a;
 }
 
 div#school p#school-sign
 {
+    padding-top: 12px;
     margin-left: 10%;
 }
 
