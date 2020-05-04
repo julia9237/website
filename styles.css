@@ -2,25 +2,12 @@
 
 html, div, p, div#news, div#top
 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 11%;
-    margin-right: 11%;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    font-family: 'Chloreal';
     display: block;
-    background-color: #303030;
-}
-
-html {
-    background-color: #111111;
-    font-family: 'Courier New', Courier, monospace;
-    display: block;
-}
-
-div#top, div#news
-{
-    margin-top: 5pt;
-    margin-bottom: 5pt;
+    color: #B963EF;
+    background-color: #25003D;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -31,13 +18,13 @@ div#top, div#news
         background-color: #111111;
     }
     ::-webkit-scrollbar-thumb {
-        background-color: #ff75a8;
+        background-color: #B963EF;
     }
 }
 
 @-moz-document url-prefix() {
     html{
-        scrollbar-color: #ff75a8 #333333;
+        scrollbar-color: #B963EF #25003D;
     }
 }
 
@@ -45,88 +32,105 @@ div#top {
     text-align: center;
     font-weight: bold;
     font-size: 44px;
-    color: #f5548a;
 }
 
-div#news {
-    padding: 4px;
-    margin-right: 33%;
+div#stuff
+{
+    display: block;
+    border-style: none double none double;
+    border-color: #B963EF;
 }
 
-div#news p#header {
-    margin-left: 2%;
-    font-size: 28px;
-    color: #f5548a;
+div#stuffItem
+{
+    font-family: 'Aller';
+    overflow: hidden;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    width: 33.2%;
+    position: relative;
+    display: block;
+    width: fit-content;
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    background-color: #432655;
+}
+
+div#stuffItem a, div#stuffItem a:visited, div#stuffItem a:link
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: #B963EF;
+    display: block;
+}
+
+div#stuffItem a:hover
+{
+    font-weight: bold;
 }
 
 img#construct
 {
     width: fit-content;
-    margin: 0px;
     max-width: 100%;
     max-height: 100%;
 }
 
-div#memes
-{
-    padding: 0.5%;
-}
-
 div#memes video
 {
-    position: relative;
+    display: inline-block;
     width: 32.7%;
-    max-width: 32.7%;
-    min-width: 32.7%;
+    max-width: 100%;
+    min-width: 25%;
 }
 
 div#navbar
 {
-    padding-left: 1%;
-    padding-bottom: 4px;
+    border-style: double double none double;
+    border-color: #B963EF;
+    padding: 10pt;
     text-align: left;
 }
+
 div#navbar a
 {
-    margin: 4px;
-    color: #f5548a;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: #25003D;
+    text-decoration: none;
+    display: inline-block;
+    color: #B963EF;
     font-size: 33px;
 }
 
-div#top p#school
+div#navbar a:hover
 {
-    color: #ffffff;
-}
-
-div#school p
-{
-    margin: 0;
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 33px;
-    color: #ffffff;
-}
-
-div#school p#school-sign
-{
-    padding-top: 12px;
-    margin-left: 10%;
+    border-color: #B963EF;
+    border-style: solid;
+    background-color: #432655;
+    color: #B963EF;
 }
 
 div#footer
 {
-    margin-top: 5pt;
     text-align: center;
     font-size: 120%;
 }
 
-div#footer p#secret-text
+div#footer
 {
-    margin: 0;
     text-align: right;
     color: #303030;
 }
 
+@media (max-width: 620px) {
+
+}
+
+/*
 @media (max-width: 1026px) {
     html, div, p , div#news, div#top, div#footer, div#school
     {
@@ -150,3 +154,4 @@ div#footer p#secret-text
         font-size: 150%;
     }
 }
+*/
