@@ -78,6 +78,11 @@ img#construct
     max-height: 100%;
 }
 
+div#memes
+{
+    border-style: none double double double;
+}
+
 div#memes video
 {
     display: inline-block;
