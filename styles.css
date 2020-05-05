@@ -145,14 +145,11 @@ footer a:link, footer a:visited
     font-family: 'Aller';
     text-decoration: none;
 }
-/*
-div#footer a:hover
+
+footer a:hover
 {
-    border-color: var(--main);
-    border-style: solid;
-    background-color: var(--bg2);
+    cursor: pointer;
 }
-*/
 
 /*
 @media (max-width: 620px) {
