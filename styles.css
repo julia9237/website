@@ -1,30 +1,37 @@
 @charset "UTF-8";
 
+:root
+{
+    --main: #B963EF;
+    --bg: #25003D;
+    --bg2: #432655;
+}
+
 html, div, p, div#news, div#top
 {
     padding: 0;
     margin: 0;
     font-family: 'Chloreal';
     display: block;
-    color: #B963EF;
-    background-color: #25003D;
+    color: var(--main);
+    background-color: var(--bg);
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     ::-webkit-scrollbar {
-        background-color: #333333;
+        background-color: var(--bg2);
     }
     ::-webkit-scrollbar-button {
-        background-color: #111111;
+        background-color: var(--bg);
     }
     ::-webkit-scrollbar-thumb {
-        background-color: #B963EF;
+        background-color: var(--main);
     }
 }
 
 @-moz-document url-prefix() {
     html{
-        scrollbar-color: #B963EF #25003D;
+        scrollbar-color: var(--main) var(--bg);
     }
 }
 
@@ -38,7 +45,7 @@ div#stuff
 {
     display: block;
     border-style: none double none double;
-    border-color: #B963EF;
+    border-color: var(--main);
 }
 
 div#stuffItem
@@ -55,14 +62,14 @@ div#stuffItem
     border-style: solid;
     border-color: inherit;
     border-width: 1px;
-    background-color: #432655;
+    background-color: var(--bg2);
 }
 
 div#stuffItem a, div#stuffItem a:visited, div#stuffItem a:link
 {
     font-size: 20px;
     text-decoration: none;
-    color: #B963EF;
+    color: var(--main);
     display: block;
 }
 
@@ -94,7 +101,7 @@ div#memes video
 div#navbar
 {
     border-style: double double none double;
-    border-color: #B963EF;
+    border-color: var(--main);
     padding: 10pt;
     text-align: left;
 }
@@ -104,36 +111,52 @@ div#navbar a
     padding-left: 1%;
     padding-right: 1%;
     border-style: solid;
-    border-color: #25003D;
+    border-color: var(--bg);
     text-decoration: none;
     display: inline-block;
-    color: #B963EF;
+    color: var(--main);
     font-size: 33px;
 }
 
 div#navbar a:hover
 {
-    border-color: #B963EF;
+    border-color: var(--main);
     border-style: solid;
-    background-color: #432655;
-    color: #B963EF;
+    background-color: var(--bg2);
+    color: var(--main);
 }
 
 div#footer
 {
+    padding-bottom: 10px;
+    border-style: none double double double;
     text-align: center;
-    font-size: 120%;
+    color: var(--main);
 }
 
-div#footer
+div#footer a:link, div#footer a:visited
 {
-    text-align: right;
-    color: #303030;
+    border-style: solid;
+    border-color: var(--bg);
+    color: var(--main);
+    font-size: 120%;
+    font-family: 'Aller';
+    text-decoration: none;
 }
+/*
+div#footer a:hover
+{
+    border-color: var(--main);
+    border-style: solid;
+    background-color: var(--bg2);
+}
+*/
 
+/*
 @media (max-width: 620px) {
 
 }
+*/
 
 /*
 @media (max-width: 1026px) {
