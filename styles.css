@@ -7,7 +7,7 @@
     --bg2: #432655;
 }
 
-html, div, p, div#news, div#top
+html, body, footer, head, div, p, div#news, div#top
 {
     padding: 0;
     margin: 0;
@@ -87,7 +87,7 @@ img#construct
 
 div#memes
 {
-    border-style: none double double double;
+    border-style: none double none double;
 }
 
 div#memes video
@@ -126,18 +126,20 @@ div#navbar a:hover
     color: var(--main);
 }
 
-div#footer
+footer
 {
+    padding-top: 7px;
     padding-bottom: 10px;
     border-style: none double double double;
     text-align: center;
     color: var(--main);
 }
 
-div#footer a:link, div#footer a:visited
+footer a:link, footer a:visited
 {
-    border-style: solid;
-    border-color: var(--bg);
+    
+    /*border-style: solid;
+    border-color: var(--bg);*/
     color: var(--main);
     font-size: 120%;
     font-family: 'Aller';
