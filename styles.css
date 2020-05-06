@@ -135,6 +135,7 @@ div#navbar a:hover
 
 div#info
 {
+    height: 60%;
     color: var(--main);
     margin-left: 10%;
     margin-right: 10%;
@@ -145,6 +146,33 @@ div#info
 }
 
 footer
+{
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+}
+
+footer#memes
+{
+    display: block;
+    position: static;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    border-style: none double double double;
+    text-align: center;
+    color: var(--main);
+}
+
+footer#memes a, footer#memes a:visited, footer#memes a:link
+{
+    color: var(--main)
+}
+
+footer div
 {
     margin-left: 10%;
     margin-right: 10%;
@@ -157,19 +185,12 @@ footer
     color: var(--main);
 }
 
-footer a, footer a:link, footer a:visited
+footer div a, footer div a:link, footer div a:visited
 {
     background-color: var(--bg2);
-    /*border-style: solid;
-    border-color: var(--bg);*/
     color: var(--main);
     font-size: 120%;
     text-decoration: none;
-}
-
-footer a:hover
-{
-    cursor: pointer;
 }
 
 /*
@@ -207,6 +228,15 @@ footer a:hover
 div#hehe
 {
     position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10px;
+    width: 10px;
+}
+
+div#hehe.memes
+{
+    position: static;
     bottom: 0;
     right: 0;
     height: 10px;
