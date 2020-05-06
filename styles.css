@@ -17,7 +17,7 @@
 @font-face
 {
     font-family: "M7";
-    src: url(src/fnt/ModeSeven.ttf);
+    src: url(src/font/ModeSeven.ttf);
 }
 
 html, header, body, footer, head, div, p, div#news, div#top, h1
