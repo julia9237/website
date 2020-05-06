@@ -17,6 +17,11 @@ html, body, footer, head, div, p, div#news, div#top
     background-color: var(--bg);
 }
 
+html
+{
+    height: 100%;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     ::-webkit-scrollbar {
         background-color: var(--bg2);
@@ -182,3 +187,18 @@ footer a:hover
     }
 }
 */
+
+div#hehe
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10px;
+    width: 10px;
+}
+
+div#hehe:hover
+{
+    background-color: var(--bg2);
+    cursor: pointer;
+}
