@@ -31,8 +31,24 @@ html, header, body, footer, head, div, p, div#news, div#top, h1
 
 html
 {
-    background-color: var(--bg);
+    background-color: var(--main);
     height: 100%;
+}
+
+div#main
+{
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    background-color: var(--bg);
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
