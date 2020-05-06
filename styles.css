@@ -2,16 +2,23 @@
 
 :root
 {
-    --main: #B963EF;
-    --bg: #25003D;
-    --bg2: #432655;
+    --main: #000; /*#B963EF*/
+    --bg: #fff; /*#25003D*/
+    --bg2: rgb(189,189,189); /*#432655*/
+}
+
+.inverted
+{
+    --main: #fff;
+    --bg: #000;
+    --bg2: rgb(66,66,66);
 }
 
 html, body, footer, head, div, p, div#news, div#top
 {
     padding: 0;
     margin: 0;
-    font-family: 'Chloreal';
+    font-family: 'ModeSeven';
     display: block;
     color: var(--main);
     background-color: var(--bg);
@@ -55,7 +62,6 @@ div#stuff
 
 div#stuffItem
 {
-    font-family: 'Aller';
     overflow: hidden;
     float: left;
     padding: 0px;
@@ -105,10 +111,11 @@ div#memes video
 
 div#navbar
 {
+    display: felx;
+    justify-content: space-around;
     border-style: double double none double;
     border-color: var(--main);
     padding: 10pt;
-    text-align: left;
 }
 
 div#navbar a
@@ -133,6 +140,8 @@ div#navbar a:hover
 
 footer
 {
+    display: flex;
+    justify-content: space-around;
     padding-top: 7px;
     padding-bottom: 10px;
     border-style: none double double double;
@@ -140,14 +149,13 @@ footer
     color: var(--main);
 }
 
-footer a:link, footer a:visited
+footer a, footer a:link, footer a:visited
 {
-    
+    background-color: var(--bg2);
     /*border-style: solid;
     border-color: var(--bg);*/
     color: var(--main);
     font-size: 120%;
-    font-family: 'Aller';
     text-decoration: none;
 }
 
