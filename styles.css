@@ -31,7 +31,7 @@ html, header, body, footer, head, div, p, div#news, div#top, h1
 
 html
 {
-    background-color: var(--main);
+    background-color: rgb(33,33,33);
     height: 100%;
 }
 
@@ -77,30 +77,6 @@ div#top p
     color: var(--main);
     position: relative;
     z-index: 1;
-}
-
-div#top p#r
-{
-    color: rgba(255,255,100,0.7);
-    margin-bottom: 2px;
-    margin-left: 2px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 0;
-}
-
-div#top p#b
-{
-    color: rgba(100,255,255,0.7);
-    margin-top: 2px;
-    margin-right: 2px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 0;
 }
 
 div.memes
