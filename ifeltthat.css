@@ -1,19 +1,26 @@
 @charset "UTF-8";
 
+:root
+{
+    --blue: #0033b2;
+    --yellow: #ffcc4d;
+    --img-bg-color: #fff;
+}
+
 html
 {
     text-align: center;
     margin: 0px;
     font-family: "Comic Sans MS";
     overflow-y: scroll;
-    background-color: #ffcc4d;
+    background-color: var(--yellow);
 }
 
 img
 {
     border-style: dashed;
-    border-color: #f00;
-    background-color: #fff;
+    border-color: var(--blue);
+    background-color: var(--img-bg-color);
     display: inline-block;
     height: 200px;
 }
@@ -25,7 +32,7 @@ img:hover
 
 header
 {
-    color: #0033b2;
+    color: var(--blue);
 }
 
 p#sub
@@ -43,7 +50,7 @@ p#tit
 footer a, footer a:link, footer a:visited
 {
     text-decoration: none;
-    color: #0033b2;
+    color: var(--blue);
     font-size: 32px;
 }
 
