@@ -2,12 +2,57 @@
 
 html
 {
+    margin: 0px;
+    font-family: "Comic Sans MS";
+    overflow-y: scroll;
     background-color: #ffcc4d;
+}
+
+body
+{
+    text-align: center;
 }
 
 img
 {
-    text-align: left;
+    border-style: dashed;
+    border-color: #f00;
+    background-color: #fff;
     display: inline-block;
-    height: 256px;
+    height: 200px;
+}
+
+img:hover
+{
+    border-style: solid;
+}
+
+header
+{
+    color: #0033b2;
+    text-align: center;
+}
+
+p#sub
+{
+    margin: 0px;
+    font-size: 64px;
+}
+
+p#tit
+{
+    margin: 0px;
+    font-size: 128px;
+}
+
+footer
+{
+    text-align: center;
+}
+
+footer a, footer a:link, footer a:visited
+{
+    text-decoration: none;
+    color: #0033b2;
+    font-size: 32px;
 }
