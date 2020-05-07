@@ -2,15 +2,11 @@
 
 html
 {
+    text-align: center;
     margin: 0px;
     font-family: "Comic Sans MS";
     overflow-y: scroll;
     background-color: #ffcc4d;
-}
-
-body
-{
-    text-align: center;
 }
 
 img
@@ -30,7 +26,6 @@ img:hover
 header
 {
     color: #0033b2;
-    text-align: center;
 }
 
 p#sub
@@ -45,14 +40,14 @@ p#tit
     font-size: 128px;
 }
 
-footer
-{
-    text-align: center;
-}
-
 footer a, footer a:link, footer a:visited
 {
     text-decoration: none;
     color: #0033b2;
     font-size: 32px;
+}
+
+footer a#ALLTHEJOYF
+{
+    font-size: calc(100vw/12);
 }
