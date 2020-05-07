@@ -3,6 +3,7 @@
 :root
 {
     --blue: #0033b2;
+    --hover: #f0f;
     --yellow: #ffcc4d;
     --img-bg-color: #fff;
 }
@@ -52,6 +53,12 @@ footer a, footer a:link, footer a:visited
     text-decoration: none;
     color: var(--blue);
     font-size: 32px;
+}
+
+footer a:hover
+{
+    cursor: pointer;
+    color: var(--hover)
 }
 
 footer a#ALLTHEJOYF
