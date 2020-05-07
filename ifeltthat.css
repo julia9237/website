@@ -2,11 +2,12 @@
 
 html
 {
-    background-color: #000;
-    text-align: center;
+    background-color: #ffcc4d;
 }
 
 img
 {
-    height: calc(98vh);
+    text-align: left;
+    display: inline-block;
+    height: 256px;
 }
