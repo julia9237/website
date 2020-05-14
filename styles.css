@@ -46,12 +46,12 @@ div#main
 
 input.cmd
 {
+    overflow: scroll;
     cursor: default;
     font-family: "M7";
     font-family: ModeSeven;
     width: 99.7%;
     font-size: 24px;
-    text-align: south;
     color: transparent;
     text-shadow: 0px 0px 0px var(--main);
     background-color: var(--bg);
