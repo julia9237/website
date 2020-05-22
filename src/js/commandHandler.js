@@ -1,4 +1,9 @@
-var commands = ["help"];
+var commands = ["help", "theme", "themes"];
+var themes = ["dark", "light", "purple"]
+
+function themeSwitch(themeName) {
+    document.getElementById("switch").setAttribute("class", themeName);
+}
 
 function submitt() {
     var lastCommand = document.getElementById("focus");
@@ -9,17 +14,42 @@ function submitt() {
 
         var commandResponse = document.createElement("p");
         document.getElementById("main").appendChild(commandResponse);
-        if(commands.includes(lastCommand.value)) {
-            switch(lastCommand.value) {
+        var commandParts = lastCommand.value.split(" ");
+
+        if(commands.includes(commandParts[0])) {
+            switch(commandParts[0]) {
                 case "help":
-                    commandResponse.innerHTML = lastCommand.value + ": help text";
+                    commandResponse.innerHTML = commandParts[0] + ": help text";
                     break;
-            
-                default:
+                case "theme":
+                    if(commandParts.length > 1)
+                    {
+                        switch (commandParts[1]) {
+                            case themes[0]:
+                                themeSwitch(themes[0]);
+                                break;
+                            case themes[1]:
+                                themeSwitch(themes[1]);
+                                break;
+                            case themes[2]:
+                                themeSwitch(themes[2]);
+                                break;
+                            default:
+                                commandResponse.innerHTML = commandParts[1] + " is not a valid theme";
+                                break;
+                        }
+                        commandResponse.innerHTML = "Theme set to: " + commandParts[1];
+                    } else {
+                        commandResponse.innerHTML = "Themes: " + themes;
+                    }
+                    break;
+
+                case "themes":
+                    commandResponse.innerHTML = "Themes: " + themes;
                     break;
             }
         } else {
-            commandResponse.innerHTML = lastCommand.value + ': command not found';
+            commandResponse.innerHTML = commandParts[0] + ': command not found';
         }
 
         var newCommand = document.createElement("input");

@@ -1,17 +1,24 @@
 @charset "UTF-8";
 
-:root
+.dark
 {
-    --main: #fff; /*#B963EF*/
-    --bg: #000; /*#25003D*/
-    --bg2: rgb(66,66,66); /*#432655*/
+    --main: #fff; /**/
+    --bg: #000; /**/
+    --bg2: rgb(66,66,66); /**/
 }
 
-.inverted
+.light
 {
     --main: #000;
     --bg: #fff;
     --bg2: rgb(189,189,189);
+}
+
+.purple
+{
+    --main: #B963EF;
+    --bg: #25003D;
+    --bg2: #432655;
 }
 
 @font-face
@@ -57,6 +64,7 @@ div#main::-webkit-scrollbar
 
 input.cmd
 {
+    padding: 0;
     cursor: default;
     font-family: "M7";
     width: 99.7%;
@@ -70,6 +78,7 @@ input.cmd
 
 p
 {
+    padding: 0;
     margin: 0;
     font-size: 20px;
     color: var(--main);
