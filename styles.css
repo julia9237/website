@@ -64,7 +64,7 @@ div#main::-webkit-scrollbar
 
 input.cmd
 {
-    padding: 0;
+    padding: 0px;
     cursor: default;
     font-family: "M7";
     width: 99.7%;
@@ -78,8 +78,8 @@ input.cmd
 
 p
 {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     font-size: 20px;
     color: var(--main);
     background-color: transparent;
