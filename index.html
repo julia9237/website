@@ -2,6 +2,7 @@
 <script src="src/js/focusCMD.js"></script>
 <html id="switch" class="" onmousemove=focusCMD() onkeypress=focusCMD()>
     <head>
+        <script src="src/js/commandHandler.js"></script>
         <meta charset="utf-8"/>
         <title>nlbence's Cool Website</title>
         <link rel="stylesheet" href="styles.css">
@@ -13,7 +14,7 @@
         <meta property="og:url" content="https://nlbence.github.io/">
         
     </head>
-    <div id="main">
-        <input class="cmd" id="focus" spellcheck="false" >
+    <div id="main" class="disable-scrollbars">
+        <input class="cmd" id="focus" spellcheck="false" maxlength="56" autocomplete="off">
     </div>
 </html>
