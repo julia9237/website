@@ -1,8 +1,12 @@
-var commands = ["help", "theme", "themes"];
-var themes = ["dark", "light", "purple"]
+var validCommands = ["help", "theme", "themes"];
+var themes = ["dark", "light", "purple"];
 
 function themeSwitch(themeName) {
     document.getElementById("switch").setAttribute("class", themeName);
+}
+
+function focusCMD() {
+    document.getElementById("focus").focus();
 }
 
 function submitt() {
@@ -16,10 +20,11 @@ function submitt() {
         document.getElementById("main").appendChild(commandResponse);
         var commandParts = lastCommand.value.split(" ");
 
-        if(commands.includes(commandParts[0])) {
+
+        if(validCommands.includes(commandParts[0])) {
             switch(commandParts[0]) {
                 case "help":
-                    commandResponse.innerHTML = commandParts[0] + ": help text";
+                    commandResponse.innerHTML = commandParts[0] + ": " + validCommands;
                     break;
                 case "theme":
                     if(commandParts.length > 1)
@@ -67,3 +72,5 @@ document.addEventListener('keydown', function(event) {
         submitt();
     }
 });
+
+window.onload = focusCMD();
