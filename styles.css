@@ -27,15 +27,21 @@
     src: url(./src/font/ModeSeven.ttf);
 }
 
+@font-face
+{
+    font-family: "PxPlus_IBM_VGA9";
+    src: url(./src/font/PxPlus_IBM_VGA9.ttf)
+}
+
 html
 {
     width: 100%;
     height: 100%;
     color: var(--main);
-    font-size: 16px;
+    font-size: 24px;
     margin: 0px;
     padding: 0px;
-    font-family: "M7";
+    font-family: "PxPlus_IBM_VGA9";
     background-color: rgb(33,33,33);
 }
 
@@ -66,9 +72,9 @@ input.cmd
 {
     padding: 0px;
     cursor: default;
-    font-family: "M7";
+    font-family: "PxPlus_IBM_VGA9";
     width: 99.7%;
-    font-size: 20px;
+    font-size: inherit;
     color: var(--main);
     cursor: default;
     text-shadow: 0px 0px 0px var(--main);
@@ -78,9 +84,10 @@ input.cmd
 
 p
 {
+    font-family: "PxPlus_IBM_VGA9";
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
+    font-size: inherit;
     color: var(--main);
     background-color: transparent;
 }
