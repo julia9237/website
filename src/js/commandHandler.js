@@ -1,4 +1,5 @@
 var validCommands = ["help", "theme", "themes"];
+var hiddenCommands = ["dicks"]
 var themes = ["dark", "light", "purple"];
 
 function themeSwitch(themeName) {
@@ -21,29 +22,22 @@ function submitt() {
         var commandParts = lastCommand.value.split(" ");
 
 
-        if(validCommands.includes(commandParts[0])) {
+        if(validCommands.includes(commandParts[0]) || hiddenCommands.includes(commandParts[0])) {
             switch(commandParts[0]) {
+                case "dicks":
+                    commandResponse.innerHTML = "balls";
+                    break;
                 case "help":
                     commandResponse.innerHTML = commandParts[0] + ": " + validCommands;
                     break;
                 case "theme":
-                    if(commandParts.length > 1)
-                    {
-                        switch (commandParts[1]) {
-                            case themes[0]:
-                                themeSwitch(themes[0]);
-                                break;
-                            case themes[1]:
-                                themeSwitch(themes[1]);
-                                break;
-                            case themes[2]:
-                                themeSwitch(themes[2]);
-                                break;
-                            default:
-                                commandResponse.innerHTML = commandParts[1] + " is not a valid theme";
-                                break;
+                    if(commandParts.length > 1) {
+                        if(themes.includes(commandParts[1])) {
+                            themeSwitch(commandParts[1])
+                            commandResponse.innerHTML = "Theme set to: " + commandParts[1];
+                        } else {
+                            commandResponse.innerHTML = commandParts[1] + " is not a valid theme"
                         }
-                        commandResponse.innerHTML = "Theme set to: " + commandParts[1];
                     } else {
                         commandResponse.innerHTML = "Themes: " + themes;
                     }
