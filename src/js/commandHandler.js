@@ -63,28 +63,28 @@ function submitt() {
     lastCommand.removeAttribute("id");
 };
 
+function resizeTextarea() {
+    var lastCommand = document.getElementById("focus");
+    if (lastCommand.value.length != 0) {
+        var divGetHeight = document.getElementById("getHeight");
+        divGetHeight.innerHTML = lastCommand.value;
+        lastCommand.setAttribute("style", "height: " + divGetHeight.offsetHeight + "px");
+    };
+};
+
 document.addEventListener('keydown', function (event) {
+    resizeTextarea();
     if (event.keyCode == 13) {
         submitt();
     };
 });
 
 document.addEventListener('keypress', function (event) {
-    var lastCommand = document.getElementById("focus");
-    if (lastCommand.value.trim().length != 0) {
-        var divGetHeight = document.getElementById("getHeight");
-        divGetHeight.innerHTML = lastCommand.value;
-        lastCommand.setAttribute("style", "height: " + divGetHeight.offsetHeight + "px");
-    };
+    resizeTextarea();
 });
 
 document.addEventListener('keyup', function (event) {
-    var lastCommand = document.getElementById("focus");
-    if (lastCommand.value.trim().length != 0) {
-        var divGetHeight = document.getElementById("getHeight");
-        divGetHeight.innerHTML = lastCommand.value;
-        lastCommand.setAttribute("style", "height: " + divGetHeight.offsetHeight + "px");
-    };
+    resizeTextarea();
 });
 
 function focusCMD() {
