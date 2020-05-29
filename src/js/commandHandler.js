@@ -89,6 +89,6 @@ document.addEventListener('keyup', function (event) {
 
 function focusCMD() {
     document.getElementById("focus").focus();
-}
+};
 
 window.onload = focusCMD();

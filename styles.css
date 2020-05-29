@@ -119,12 +119,14 @@ div#getHeight
     word-wrap: break-word;
 }
 
-.disable-scrollbars::-webkit-scrollbar {
+.disable-scrollbars::-webkit-scrollbar
+{
     width: 0px;
     background: transparent;
 }
 
-.disable-scrollbars {
+.disable-scrollbars
+{
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
