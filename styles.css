@@ -40,6 +40,12 @@
 
 html
 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     scroll-behavior: smooth;
     overflow: hidden;
     width: 100%;
@@ -76,14 +82,17 @@ div#main::-webkit-scrollbar
     background: transparent;
 }
 
-textarea.cmd
+textarea
 {
+    outline: none;
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
+    overflow: hidden;
     resize: none;
     height: 2ch;
     width: 100vw;
     padding: 0px;
+    margin: 0px;
     cursor: default;
     font-family: "PxPlus_IBM_VGA9";
     font-size: var(--fs);
@@ -92,21 +101,6 @@ textarea.cmd
     text-shadow: 0px 0px 0px var(--main);
     background-color: transparent;
     border: none;
-}
-
-textarea
-{
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    border: none;
-    width: 100vw;
-    resize: none;
-    font-family: "PxPlus_IBM_VGA9";
-    padding: 0px;
-    margin: 0px;
-    font-size: var(--fs);
-    color: var(--main);
-    background-color: transparent;
 }
 
 div#getHeight
