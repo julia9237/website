@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<script src="src/js/focusCMD.js"></script>
-<html id="switch" class="" onmousemove=focusCMD() onkeypress=focusCMD()>
+<html id="switch" class="dark" onmousemove="focusCMD()" onkeypress="focusCMD()">
     <head>
         <meta charset="utf-8"/>
         <title>nlbence's Cool Website</title>
         <link rel="stylesheet" href="styles.css">
-        <link class="icon" rel="icon" href="src/img/icon-wb.png">
+        <link class="icon" rel="icon" href="src/img/icon-bw.png">
         <meta name="theme-color" content="#ffffff">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Hi. Hello. Howdy.">
-        <meta property="og:image" content="/src/img/icon-wb.png">
+        <meta property="og:image" content="/src/img/icon-bw.png">
         <meta property="og:url" content="https://nlbence.github.io/">
-        
     </head>
-    <div id="main">
-        <input class="cmd" id="focus" spellcheck="false" >
-    </div>
+    <body>
+        <div id="main" class="disable-scrollbars">
+            <textarea class="cmd" id="focus" spellcheck="false" autocomplete="off"></textarea>
+        </div>
+        <div id="getHeight"></div>
+    </body>
+    <script src="src/js/commandHandler.js"></script>
 </html>

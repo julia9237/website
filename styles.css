@@ -2,39 +2,64 @@
 
 :root
 {
-    --main: #fff; /*#B963EF*/
-    --bg: #000; /*#25003D*/
-    --bg2: rgb(66,66,66); /*#432655*/
+    --fs: 24px;
 }
 
-.inverted
+.dark
+{
+    --main: #fff; /**/
+    --bg: #000; /**/
+    --bg2: rgb(66,66,66); /**/
+}
+
+.light
 {
     --main: #000;
     --bg: #fff;
     --bg2: rgb(189,189,189);
 }
 
+.purple
+{
+    --main: #B963EF;
+    --bg: #25003D;
+    --bg2: #432655;
+}
+
 @font-face
 {
     font-family: "M7";
-    src: url(../src/font/ModeSeven.ttf);
+    src: url(./src/font/ModeSeven.ttf);
+}
+
+@font-face
+{
+    font-family: "PxPlus_IBM_VGA9";
+    src: url(./src/font/PxPlus_IBM_VGA9.ttf)
 }
 
 html
 {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
     color: var(--main);
-    font-size: 16px;
+    font-size: var(--fs);
     margin: 0px;
     padding: 0px;
-    font-family: "M7";
+    font-family: "PxPlus_IBM_VGA9";
     background-color: rgb(33,33,33);
-    height: 100%;
 }
 
 div#main
 {
-    height: 600px;
-    width: 800px;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
     position: absolute;
     left: 0;
     right: 0;
@@ -44,34 +69,64 @@ div#main
     background-color: var(--bg);
 }
 
-input.cmd
+div#main::-webkit-scrollbar
 {
+    width: 0px;
+    display: none;
+    background: transparent;
+}
+
+textarea.cmd
+{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    resize: none;
+    height: 2ch;
+    width: 100vw;
+    padding: 0px;
     cursor: default;
-    font-family: "M7";
-    font-family: ModeSeven;
-    width: 99.7%;
-    font-size: 24px;
-    text-align: south;
-    color: transparent;
+    font-family: "PxPlus_IBM_VGA9";
+    font-size: var(--fs);
+    color: var(--main);
+    cursor: default;
     text-shadow: 0px 0px 0px var(--main);
-    background-color: var(--bg);
+    background-color: transparent;
     border: none;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    ::-webkit-scrollbar {
-        background-color: var(--bg2);
-    }
-    ::-webkit-scrollbar-button {
-        background-color: var(--bg);
-    }
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--main);
-    }
+textarea
+{
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    border: none;
+    width: 100vw;
+    resize: none;
+    font-family: "PxPlus_IBM_VGA9";
+    padding: 0px;
+    margin: 0px;
+    font-size: var(--fs);
+    color: var(--main);
+    background-color: transparent;
 }
 
-@-moz-document url-prefix() {
-    html{
-        scrollbar-color: var(--main) var(--bg);
-    }
+div#getHeight
+{
+    margin: 0px;
+    padding: 0px;
+    color: transparent;
+    background-color: transparent;
+    width: 100vw;
+    word-wrap: break-word;
+}
+
+.disable-scrollbars::-webkit-scrollbar
+{
+    width: 0px;
+    background: transparent;
+}
+
+.disable-scrollbars
+{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
