@@ -35,7 +35,9 @@ function submitt() {
     divGetHeight.innerHTML = lastCommand.value;
     lastCommand.setAttribute("style", "height: " + divGetHeight.offsetHeight + "px");
     
-    if (lastCommand.value.trim().length != 0) {
+    if (lastCommand.value.trim().length > 0) {
+        console.log(`Command: ${lastCommand.value} | Length: ${lastCommand.value.trim().length}`);
+
         var commandResponse = document.createElement("textarea");
         commandResponse.setAttribute("readonly", "");
         commandResponse.setAttribute("style", "height: " + divGetHeight.offsetHeight + "px");
@@ -44,6 +46,7 @@ function submitt() {
 
 
         if (validCommands.includes(commandParts[0]) || hiddenCommands.includes(commandParts[0])) {
+            console.log("Valid command");
             switch (commandParts[0]) {
                 case "dicks":
                     commandResponse.innerHTML = "balls";
@@ -74,12 +77,17 @@ function submitt() {
                     document.getElementsByTagName("body")[0].setAttribute("style", "display: none;");
                     document.getElementById("switch").setAttribute("style", "background-color: #000;");
                     break;
-
+                default:
+                    commandResponse.innerHTML = commandParts[0] + ': command not found';
+                    break;
             };
         } else {
+            console.log("Invalid command");
             commandResponse.innerHTML = commandParts[0] + ': command not found';
         };
     };
+
+    console.log(`Response: ${commandResponse.innerHTML}`);
 
     var newCommand = document.createElement("textarea");
     document.getElementById("main").appendChild(newCommand);
