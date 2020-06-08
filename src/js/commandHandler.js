@@ -85,9 +85,8 @@ function submitt() {
             console.log("Invalid command");
             commandResponse.innerHTML = commandParts[0] + ': command not found';
         };
+        console.log(`Response: ${commandResponse.innerHTML}`);
     };
-
-    console.log(`Response: ${commandResponse.innerHTML}`);
 
     var newCommand = document.createElement("textarea");
     document.getElementById("main").appendChild(newCommand);
