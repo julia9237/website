@@ -5,8 +5,8 @@ var validCommands = [
     "themes"
 ] + exitCommands;
 
-var hiddenCommands = ["dicks"]
-var themes = ["dark", "light", "purple"];
+var hiddenCommands = ["dicks", "balls"]
+var themes = ["dark", "light", "purple", "zebra", "green", "red", "blue"];
 
 function focusCMD() {
     document.getElementById("focus").focus();
@@ -40,6 +40,7 @@ function submitt() {
 
         var commandResponse = document.createElement("textarea");
         commandResponse.setAttribute("readonly", "");
+        commandResponse.setAttribute("class", "resp");
         commandResponse.setAttribute("style", "height: " + divGetHeight.offsetHeight + "px");
         document.getElementById("main").appendChild(commandResponse);
         var commandParts = lastCommand.value.split(" ");
@@ -50,6 +51,9 @@ function submitt() {
             switch (commandParts[0]) {
                 case "dicks":
                     commandResponse.innerHTML = "balls";
+                    break;
+                case "balls":
+                    commandResponse.innerHTML = "dicks";
                     break;
                 case "help":
                     commandResponse.innerHTML = commandParts[0] + ": " + validCommands;

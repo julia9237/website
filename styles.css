@@ -7,9 +7,9 @@
 
 .dark
 {
-    --main: #fff; /**/
-    --bg: #000; /**/
-    --bg2: rgb(66,66,66); /**/
+    --main: #fff;
+    --bg: #000;
+    --bg2: rgb(66,66,66);
 }
 
 .light
@@ -24,6 +24,41 @@
     --main: #B963EF;
     --bg: #25003D;
     --bg2: #432655;
+}
+
+.red
+{
+    --main: #f00;
+    --bg: #300;
+    --bg2: rgb(66,0,0);
+}
+
+.green
+{
+    --main: #0f0;
+    --bg: #030;
+    --bg2: rgb(0,66,0);
+}
+
+.blue
+{
+    --main: #00f;
+    --bg: #003;
+    --bg2: rgb(0,0,66);
+}
+
+.zebra
+{
+    --main: #fff;
+    --bg: #000;
+    --bg2: rgb(66,66,66);
+}
+
+.zebra textarea.resp
+{
+    --main: #000;
+    --bg: #fff;
+    --bg2: rgb(189,189,189);
 }
 
 @font-face
@@ -99,7 +134,7 @@ textarea
     color: var(--main);
     cursor: default;
     text-shadow: 0px 0px 0px var(--main);
-    background-color: transparent;
+    background-color: var(--bg);
     border: none;
 }
 
