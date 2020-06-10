@@ -13,7 +13,7 @@ A theme looks like this:
     --bg2: rgb(66,66,66);
 }
 ```
-Currently themes also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `.css`.
+Currently themes also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `styles.css`.
 
 # Credits
 
