@@ -1,8 +1,9 @@
 # Themes
 
 Accepting custom themes.
-There are 3 colors currently: main, bg and bg2.
+Themes are defined in the `styles.css` file and use 3 colors currently: main, bg and bg2.
 Main is for the text color, bg is the background color and bg2 is currently not used.
+
 A theme looks like this:
 ```
 .theme-name
@@ -12,7 +13,7 @@ A theme looks like this:
     --bg2: rgb(66,66,66);
 }
 ```
-Currently themes also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the css.
+Currently themes also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `.css`.
 
 # Credits
 
