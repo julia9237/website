@@ -13,9 +13,9 @@ A theme looks like this:
     --bg2: rgb(66,66,66);
 }
 ```
-Currently theme names also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `styles.css`.
+A color definition can take hex or predefined colors by default, but also rgb with the rgb(r,g,b) function. Currently theme names also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `styles.css`.
 
 # Credits
 
-## Font
+### Font
 * PxPlus IBM VGA9: https://int10h.org/oldschool-pc-fonts/fontlist/#ibmvgamcga
