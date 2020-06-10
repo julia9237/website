@@ -4,7 +4,7 @@ This is my website, that I first created just to try making a website. First it 
 
 # Themes
 
-Accepting custom themes.
+Currently accepting custom themes.
 Themes are defined in the `styles.css` file and use 3 colors currently: main, bg and bg2.
 Main is for the text color, bg is the background color and bg2 is currently not used.
 
