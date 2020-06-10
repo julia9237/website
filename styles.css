@@ -148,13 +148,13 @@ div#getHeight
     word-wrap: break-word;
 }
 
-.disable-scrollbars::-webkit-scrollbar
+.no-scroll::-webkit-scrollbar
 {
     width: 0px;
     background: transparent;
 }
 
-.disable-scrollbars
+.no-scroll
 {
   scrollbar-width: none;
   -ms-overflow-style: none;

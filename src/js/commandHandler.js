@@ -1,9 +1,13 @@
-var exitCommands = ["close", "quit", "exit", "stop"]
 var validCommands = [
     "help",
     "theme",
-    "themes"
-] + exitCommands;
+    "themes",
+    "close",
+    "quit",
+    "exit",
+    "stop",
+    "clear"
+]
 
 var hiddenCommands = ["dicks", "balls"]
 var themes = ["dark", "light", "purple", "zebra", "green", "red", "blue"];
@@ -23,7 +27,7 @@ function resizeTextarea() {
 
 function themeSwitch(themeName) {
     document.getElementById("switch").setAttribute("class", themeName);
-}
+};
 
 function submitt() {
     var lastCommand = document.getElementById("focus");
@@ -50,28 +54,28 @@ function submitt() {
             console.log("Valid command");
             switch (commandParts[0]) {
                 case "dicks":
-                    commandResponse.innerHTML = "balls";
+                    commandResponse.value = "balls";
                     break;
                 case "balls":
-                    commandResponse.innerHTML = "dicks";
+                    commandResponse.value = "dicks";
                     break;
                 case "help":
-                    commandResponse.innerHTML = commandParts[0] + ": " + validCommands;
+                    commandResponse.value = commandParts[0] + ": " + validCommands;
 					break;
                 case "theme":
                     if (commandParts.length > 1) {
                         if (themes.includes(commandParts[1])) {
                             themeSwitch(commandParts[1])
-                            commandResponse.innerHTML = "Theme set to: " + commandParts[1];
+                            commandResponse.value = "Theme set to: " + commandParts[1];
                         } else {
-                            commandResponse.innerHTML = commandParts[1] + " is not a valid theme"
+                            commandResponse.value = commandParts[1] + " is not a valid theme"
                         };
                     } else {
-                        commandResponse.innerHTML = "Themes: " + themes;
+                        commandResponse.value = "Themes: " + themes;
                     };
                     break;
                 case "themes":
-                    commandResponse.innerHTML = "Themes: " + themes;
+                    commandResponse.value = "Themes: " + themes;
                     break;
                 case "stop":
                 case "close":
@@ -81,15 +85,18 @@ function submitt() {
                     document.getElementsByTagName("body")[0].setAttribute("style", "display: none;");
                     document.getElementById("switch").setAttribute("style", "background-color: #000;");
                     break;
+                case "clear":
+                    document.getElementById("main").innerHTML = null;
+                    break;
                 default:
-                    commandResponse.innerHTML = commandParts[0] + ': command not found';
+                    commandResponse.value = commandParts[0] + ': command not found';
                     break;
             };
         } else {
             console.log("Invalid command");
-            commandResponse.innerHTML = commandParts[0] + ': command not found';
+            commandResponse.value = commandParts[0] + ': command not found';
         };
-        console.log(`Response: ${commandResponse.innerHTML}`);
+        console.log(`Response: ${commandResponse.value}`);
     };
 
     var newCommand = document.createElement("textarea");
