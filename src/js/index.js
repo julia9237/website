@@ -17,7 +17,7 @@ if (urlParams.has("hex")) {
         "ff0000": "fuck of",
         "ffffff": "flashbang"
     };
-    var word = specialColors[hex] || "will";
+    var word = specialColors[hex] || "wi";
     document.getElementById("b").innerHTML = "Something someday " + word + "ll be here";
     /*
     if(hex === "eeaaff") {

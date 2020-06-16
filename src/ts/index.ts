@@ -21,7 +21,7 @@ if(urlParams.has("hex")) {
     "ffffff": "flashbang"
   };
   
-  const word = specialColors[hex] || "will"
+  const word = specialColors[hex] || "wi"
 
   document.getElementById("b").innerHTML = `Something someday ${word}ll be here`;
 
