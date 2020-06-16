@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Exo2-ExtraLight";
+            src: url(./src/font/Exo2-ExtraLight.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Exo2-ExtraLightItalic";
+            src: url(./src/font/Exo2-ExtraLightItalic.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Exo2-Regular";
+            src: url(./src/font/Exo2-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Exo2-Italic";
+            src: url(./src/font/Exo2-Italic.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Exo2-Bold";
+            src: url(./src/font/Exo2-Bold.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Exo2-BoldItalic";
+            src: url(./src/font/Exo2-BoldItalic.otf) format("opentype");
+}
+
+:root {
+    --text-main: rgb(33,33,33);
+         --link: rgb(66,66,66);
+  --background1: rgb(255, 64, 140);
+  --background2: rgb(102, 133, 255);
+  --background3: rgb(102, 204, 255);
+  --background4: rgb(102, 250, 255);
+  --background5: rgb(102, 255, 214);
+  --background6: rgb(255, 219, 102);
+  --background7: rgb(255, 166, 102);
+  --background8: rgb(255, 117, 102);
+  --background9: rgb(255, 102, 102);
+ --background10: rgb(102, 184, 255);
+}
+
+
+h1,
+h2,
+div,
+html,
+a,
+:visited {
+            display: block;
+              color: var(--text-main);
+    text-decoration: none;
+             margin: 0;
+            padding: 0;
+             border: none;
+            outline: none;
+        font-family: Exo2-Regular;
+   background-color: transparent;
+}
+
+h1,
+h2 {
+    color: var(--text-main);
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+a {
+    text-decoration: underline;
+              color: var(--link) !important;
+          font-size: 42px;
+}
+
+div#header {
+    margin-right: auto;
+     margin-left: auto;
+      text-align: center;
+}
