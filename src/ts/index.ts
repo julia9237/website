@@ -12,6 +12,9 @@ if(urlParams.has("hex")) { // handle queries
   var hex = urlParams.get("hex");
   document.getElementsByTagName("html")[0].setAttribute("style", `background-color: #${hex};`);
   document.getElementsByClassName("icon")[0].setAttribute("href",  "");
+  if(hex === "eeaaff") {
+    document.getElementById("vv").innerHTML = "Something someday vivill be here";
+  };
   /* find og:image meta and set it to none
   var metas = document.getElementsByTagName("meta");
   for(var i = 0; i < metas.length; i++) {
