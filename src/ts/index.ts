@@ -1,6 +1,8 @@
 function getRandomBackground() {
+
   const bgNum = Math.floor(Math.random() * 9) + 1;
   document.getElementsByClassName("icon")[0].setAttribute("href",  `./src/img/icon${bgNum}.png`)
+
   return `background-color: var(--background${bgNum});`;
 };
 
@@ -21,6 +23,7 @@ if(urlParams.has("hex")) {
     "14df96": "gay",
     "ff0000": "fuck of",
     "ffffff": "flashbang",
+    "ffa8c8": "setsu",
   };
   
   if (hex === "00ff00") alert("why"); // vivi suggestion

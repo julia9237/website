@@ -15,7 +15,8 @@ if (urlParams.has("hex")) {
         "eeaaff": "vivi",
         "14df96": "gay",
         "ff0000": "fuck of",
-        "ffffff": "flashbang"
+        "ffffff": "flashbang",
+        "ffa8c8": "setsu"
     };
     if (hex === "00ff00")
         alert("why"); // vivi suggestion
