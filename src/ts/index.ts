@@ -16,7 +16,9 @@ if(urlParams.has("hex")) {
 
   const specialColors = {
     "eeaaff": "vivi",
-    "14df96": "gay"
+    "14df96": "gay",
+    "ff0000": "fuck of",
+    "ffffff": "flashbang"
   };
   
   const word = specialColors[hex] || "will"

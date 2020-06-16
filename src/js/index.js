@@ -13,7 +13,9 @@ if (urlParams.has("hex")) {
     document.getElementsByClassName("icon")[0].setAttribute("href", "");
     var specialColors = {
         "eeaaff": "vivi",
-        "14df96": "gay"
+        "14df96": "gay",
+        "ff0000": "fuck of",
+        "ffffff": "flashbang"
     };
     var word = specialColors[hex] || "will";
     document.getElementById("b").innerHTML = "Something someday " + word + "ll be here";
