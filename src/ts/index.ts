@@ -7,7 +7,9 @@ function getRandomBackground() {
 const html = document.getElementsByTagName("html")[0];
 html.setAttribute("style", getRandomBackground());
 
-var urlParams = new URLSearchParams(window.location.search); // get queries
+var urlParams = new URLSearchParams(window.location.search);
+
+
 if(urlParams.has("hex")) {
 
   const hex = urlParams.get("hex");
@@ -18,21 +20,26 @@ if(urlParams.has("hex")) {
     "eeaaff": "vivi",
     "14df96": "gay",
     "ff0000": "fuck of",
-    "ffffff": "flashbang"
+    "ffffff": "flashbang",
   };
   
+  if (hex === "00ff00") alert("why"); // vivi suggestion
+
   const word = specialColors[hex] || "wi"
 
   document.getElementById("b").innerHTML = `Something someday ${word}ll be here`;
 
-  /*
+  /* old method of finding colors
   if(hex === "eeaaff") {
     document.getElementById("b").innerHTML = "Something someday vivill be here";
   }
   else if(hex === "14df96") {
     document.getElementById("b").innerHTML = "Something someday gayll be here";
   };*/
+
+
   /* find og:image meta and set it to none
+
   var metas = document.getElementsByTagName("meta");
   for(var i = 0; i < metas.length; i++) {
     switch(metas[i].getAttribute("property")) {
