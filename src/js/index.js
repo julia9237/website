@@ -7,14 +7,23 @@ function getRandomBackground() {
 var html = document.getElementsByTagName("html")[0];
 html.setAttribute("style", getRandomBackground());
 var urlParams = new URLSearchParams(window.location.search); // get queries
-if (urlParams.has("hex")) { // handle queries
+if (urlParams.has("hex")) {
     var hex = urlParams.get("hex");
     document.getElementsByTagName("html")[0].setAttribute("style", "background-color: #" + hex + ";");
     document.getElementsByClassName("icon")[0].setAttribute("href", "");
-    if (hex === "eeaaff") {
-        document.getElementById("vv").innerHTML = "Something someday vivill be here";
+    var specialColors = {
+        "eeaaff": "vivi",
+        "14df96": "gay"
+    };
+    var word = specialColors[hex] || "will";
+    document.getElementById("b").innerHTML = "Something someday " + word + "ll be here";
+    /*
+    if(hex === "eeaaff") {
+      document.getElementById("b").innerHTML = "Something someday vivill be here";
     }
-    ;
+    else if(hex === "14df96") {
+      document.getElementById("b").innerHTML = "Something someday gayll be here";
+    };*/
     /* find og:image meta and set it to none
     var metas = document.getElementsByTagName("meta");
     for(var i = 0; i < metas.length; i++) {

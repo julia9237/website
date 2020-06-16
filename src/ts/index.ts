@@ -1,20 +1,35 @@
 function getRandomBackground() {
-  var bgNum = Math.floor(Math.random() * 9) + 1;
+  const bgNum = Math.floor(Math.random() * 9) + 1;
   document.getElementsByClassName("icon")[0].setAttribute("href",  `./src/img/icon${bgNum}.png`)
   return `background-color: var(--background${bgNum});`;
 };
 
-var html = document.getElementsByTagName("html")[0];
+const html = document.getElementsByTagName("html")[0];
 html.setAttribute("style", getRandomBackground());
 
 var urlParams = new URLSearchParams(window.location.search); // get queries
-if(urlParams.has("hex")) { // handle queries
-  var hex = urlParams.get("hex");
+if(urlParams.has("hex")) {
+
+  const hex = urlParams.get("hex");
   document.getElementsByTagName("html")[0].setAttribute("style", `background-color: #${hex};`);
   document.getElementsByClassName("icon")[0].setAttribute("href",  "");
-  if(hex === "eeaaff") {
-    document.getElementById("vv").innerHTML = "Something someday vivill be here";
+
+  const specialColors = {
+    "eeaaff": "vivi",
+    "14df96": "gay"
   };
+  
+  const word = specialColors[hex] || "will"
+
+  document.getElementById("b").innerHTML = `Something someday ${word}ll be here`;
+
+  /*
+  if(hex === "eeaaff") {
+    document.getElementById("b").innerHTML = "Something someday vivill be here";
+  }
+  else if(hex === "14df96") {
+    document.getElementById("b").innerHTML = "Something someday gayll be here";
+  };*/
   /* find og:image meta and set it to none
   var metas = document.getElementsByTagName("meta");
   for(var i = 0; i < metas.length; i++) {
