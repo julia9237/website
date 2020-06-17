@@ -1,3 +1,5 @@
+document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"};
+
 function getRandomBackground() {
 
   const bgNum = Math.floor(Math.random() * 9) + 1;

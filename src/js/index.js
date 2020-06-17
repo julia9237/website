@@ -1,3 +1,4 @@
+document.getElementsByTagName("h1")[0].onclick = function () { window.location.href = "./hi.html"; };
 function getRandomBackground() {
     var bgNum = Math.floor(Math.random() * 9) + 1;
     document.getElementsByClassName("icon")[0].setAttribute("href", "./src/img/icon" + bgNum + ".png");
