@@ -5,6 +5,7 @@ const bgNum = Math.floor(Math.random() * 9) + 1
 document.getElementsByClassName("icon")[0].setAttribute("href",  `./src/img/icon${bgNum}.png`)
 document.getElementsByTagName("html")[0].setAttribute("style", `background-color: var(--background${bgNum});`)
 
+
 const hihelloGen = new Worker('hihello.ts')
 const hihelloGenDelay = window.setInterval(hihelloSpam, 500)
 

@@ -1,5 +1,3 @@
-document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"}
-
 function getRandomBackground() {
 
   const bgNum = Math.floor(Math.random() * 9) + 1;
@@ -8,8 +6,11 @@ function getRandomBackground() {
   return `background-color: var(--background${bgNum});`
 }
 
-const html = document.getElementsByTagName("html")[0]
-html.setAttribute("style", getRandomBackground())
+document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"}
+
+
+const html = document.getElementsByTagName("html")[0].setAttribute("style", getRandomBackground())
+
 
 var urlParams = new URLSearchParams(window.location.search)
 
