@@ -52,6 +52,7 @@ div,
 html,
 a,
 :visited {
+             resize: none;
             display: block;
               color: var(--text-main);
     text-decoration: none;
