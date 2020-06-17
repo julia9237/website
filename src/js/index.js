@@ -4,7 +4,6 @@ function getRandomBackground() {
     document.getElementsByClassName("icon")[0].setAttribute("href", "./src/img/icon" + bgNum + ".png");
     return "background-color: var(--background" + bgNum + ");";
 }
-;
 var html = document.getElementsByTagName("html")[0];
 html.setAttribute("style", getRandomBackground());
 var urlParams = new URLSearchParams(window.location.search);
@@ -42,4 +41,3 @@ if (urlParams.has("hex")) {
     };
     */
 }
-;
