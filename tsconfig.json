@@ -5,6 +5,6 @@
         "outDir": "./src/js"
     },
     "include": [
-        "./src/ts/index.ts"
+        "./src/ts/*"
     ]
 }
