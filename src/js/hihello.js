@@ -11,6 +11,7 @@ function hihelloSpam() {
             break;
     }
     ;
+    window.scrollTo(0, body.scrollHeight);
     return;
 }
 ;

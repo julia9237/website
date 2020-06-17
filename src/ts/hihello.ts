@@ -12,5 +12,6 @@ function hihelloSpam() {
       body.innerHTML += "hello<br>";
       break;
   };
+  window.scrollTo(0, body.scrollHeight);
   return;
 };
