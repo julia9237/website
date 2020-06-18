@@ -1,4 +1,5 @@
 function getRandomBackground(): String {
+
   const colors = [
     "255, 64, 140",
     "102, 133, 255",
@@ -16,6 +17,7 @@ function getRandomBackground(): String {
 }
 
 function getIcon(color: String, colorType: Number): String {
+
   const canvas = document.createElement("canvas")
   canvas.height = 16
   canvas.width = 16
@@ -26,12 +28,14 @@ function getIcon(color: String, colorType: Number): String {
   return canvas.toDataURL()
 }
 
-document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"}
-
 const bgColor = getRandomBackground()
+
 document.getElementsByClassName("icon")[0].setAttribute("href", getIcon(bgColor, 0).toString())
+
 document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`)
 
+
+document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"}
 
 var urlParams = new URLSearchParams(window.location.search)
 

@@ -25,10 +25,10 @@ function getIcon(color, colorType) {
     ctx.fillRect(0, 0, 16, 16);
     return canvas.toDataURL();
 }
-document.getElementsByTagName("h1")[0].onclick = function () { window.location.href = "./hi.html"; };
 const bgColor = getRandomBackground();
 document.getElementsByClassName("icon")[0].setAttribute("href", getIcon(bgColor, 0).toString());
 document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`);
+document.getElementsByTagName("h1")[0].onclick = function () { window.location.href = "./hi.html"; };
 var urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has("hex")) {
     const hex = urlParams.get("hex");
