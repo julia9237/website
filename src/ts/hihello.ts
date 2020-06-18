@@ -1,6 +1,4 @@
-// does the exact same thing as the
-// getRandomBackground() function from index.ts
-// but i had trouble with importing it so i just copy pasted it lol
+// had to copy paste because i still cant figure out importing errors
 function getRandomBackgroundd(): String {
   const colors = [
     "255, 64, 140",
