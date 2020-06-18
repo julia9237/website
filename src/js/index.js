@@ -15,12 +15,14 @@ function getRandomBackground() {
 }
 function getIcon(color, colorType) {
     const canvas = document.createElement("canvas");
+    canvas.height = 16;
+    canvas.width = 16;
     const ctx = canvas.getContext("2d");
     if (colorType === 0)
         ctx.fillStyle = `rgb(${color})`;
     else
         ctx.fillStyle = `#${color}`;
-    ctx.fillRect(0, 0, 512, 512);
+    ctx.fillRect(0, 0, 16, 16);
     return canvas.toDataURL();
 }
 document.getElementsByTagName("h1")[0].onclick = function () { window.location.href = "./hi.html"; };

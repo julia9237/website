@@ -17,10 +17,12 @@ function getRandomBackground(): String {
 
 function getIcon(color: String, colorType: Number): String {
   const canvas = document.createElement("canvas")
+  canvas.height = 16
+  canvas.width = 16
   const ctx = canvas.getContext("2d")
   if(colorType === 0) ctx.fillStyle = `rgb(${color})`
   else ctx.fillStyle = `#${color}`
-  ctx.fillRect(0, 0, 512, 512)
+  ctx.fillRect(0, 0, 16, 16)
   return canvas.toDataURL()
 }
 
