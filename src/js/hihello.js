@@ -1,33 +1,7 @@
-function getRandomBackgroundd() {
-    const colors = [
-        "255, 64, 140",
-        "102, 133, 255",
-        "102, 204, 255",
-        "102, 250, 255",
-        "102, 255, 214",
-        "255, 219, 102",
-        "255, 166, 102",
-        "255, 117, 102",
-        "255, 102, 102",
-        "102, 184, 255",
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-function getIconn(color, colorType) {
-    const canvas = document.createElement("canvas");
-    canvas.height = 16;
-    canvas.width = 16;
-    const ctx = canvas.getContext("2d");
-    if (colorType === 0)
-        ctx.fillStyle = `rgb(${color})`;
-    else
-        ctx.fillStyle = `#${color}`;
-    ctx.fillRect(0, 0, 16, 16);
-    return canvas.toDataURL();
-}
-const bgColorr = getRandomBackgroundd();
-document.getElementsByClassName("icon")[0].setAttribute("href", getIconn(bgColorr, 0).toString());
-document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColorr})`);
+import { getIcon, getRandomBackground } from "./index";
+const bgColor = getRandomBackground();
+document.getElementsByClassName("icon")[0].setAttribute("href", getIcon(bgColor, 0).toString());
+document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`);
 const hihelloGen = new Worker('hihello.ts');
 const hihelloGenDelay = window.setInterval(hihelloSpam, 500);
 function hihelloSpam() {

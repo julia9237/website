@@ -1,4 +1,4 @@
-function getRandomBackground(): String {
+export function getRandomBackground(): String {
 
   const colors = [
     "255, 64, 140",
@@ -16,7 +16,7 @@ function getRandomBackground(): String {
   return colors[Math.floor(Math.random() * colors.length)]
 }
 
-function getIcon(color: String, colorType: Number): String {
+export function getIcon(color: String, colorType: Number): String {
 
   const canvas = document.createElement("canvas")
   canvas.height = 16
@@ -59,4 +59,9 @@ if(urlParams.has("hex")) {
   const word = specialColors[hex] || "wi"
 
   document.getElementById("b").innerHTML = `Something someday ${word}ll be here`
+}
+
+function about(): void {
+  console.log("hi")
+  return
 }

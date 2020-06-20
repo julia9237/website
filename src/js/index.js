@@ -1,4 +1,4 @@
-function getRandomBackground() {
+export function getRandomBackground() {
     const colors = [
         "255, 64, 140",
         "102, 133, 255",
@@ -13,7 +13,7 @@ function getRandomBackground() {
     ];
     return colors[Math.floor(Math.random() * colors.length)];
 }
-function getIcon(color, colorType) {
+export function getIcon(color, colorType) {
     const canvas = document.createElement("canvas");
     canvas.height = 16;
     canvas.width = 16;
@@ -45,4 +45,8 @@ if (urlParams.has("hex")) {
         alert("why");
     const word = specialColors[hex] || "wi";
     document.getElementById("b").innerHTML = `Something someday ${word}ll be here`;
+}
+function about() {
+    console.log("hi");
+    return;
 }
