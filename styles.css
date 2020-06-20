@@ -73,6 +73,7 @@ h2 {
 }
 
 a {
+             cursor: pointer;
             display: inline-block;
     text-decoration: underline;
               color: var(--link) !important;
@@ -83,4 +84,10 @@ div#header {
     margin-right: auto;
      margin-left: auto;
       text-align: center;
+}
+
+::selection {
+                    color: #000;
+    text-decoration-color: #000;
+         background-color: rgba(0,0,0,0.1);
 }
