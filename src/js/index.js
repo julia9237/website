@@ -30,7 +30,16 @@ window.onload = function main() {
     document.getElementsByClassName("icon")[0].setAttribute("href", getIcon(bgColor, 0).toString());
     document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`);
     document.getElementsByTagName("h1")[0].onclick = function () { window.location.href = "./hi.html"; };
-    var urlParams = new URLSearchParams(window.location.search);
+    document.getElementById("about").onclick = function () {
+        const about = document.getElementById("abouttext");
+        if (about.getAttribute("style") === "") {
+            about.setAttribute("style", "display: none;");
+        }
+        else {
+            about.setAttribute("style", "");
+        }
+    };
+    const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("hex")) {
         const hex = urlParams.get("hex");
         document.getElementsByTagName("html")[0].setAttribute("style", `background-color: #${hex};`);
@@ -49,8 +58,4 @@ window.onload = function main() {
     }
     return;
 };
-function about() {
-    console.log("hi");
-    return;
-}
 export { getRandomBackground, getIcon };

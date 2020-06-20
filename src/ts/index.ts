@@ -29,17 +29,28 @@ function getIcon(color: String, colorType: Number): String {
 }
 
 window.onload = function main():void {
-  
+
   const bgColor = getRandomBackground()
 
   document.getElementsByClassName("icon")[0].setAttribute("href", getIcon(bgColor, 0).toString())
 
   document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`)
 
-
   document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"}
 
-  var urlParams = new URLSearchParams(window.location.search)
+  document.getElementById("about").onclick = function() {
+    const about = document.getElementById("abouttext")
+
+    if(about.getAttribute("style") === "") {
+      about.setAttribute("style", "display: none;")
+    }
+    
+    else {
+      about.setAttribute("style", "")
+    }
+  }
+
+  const urlParams = new URLSearchParams(window.location.search)
 
   if(urlParams.has("hex")) {
 
@@ -62,11 +73,6 @@ window.onload = function main():void {
 
     document.getElementById("b").innerHTML = `Something someday ${word}ll be here`
   }
-  return
-}
-
-function about(): void {
-  console.log("hi")
   return
 }
 
