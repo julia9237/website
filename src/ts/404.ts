@@ -1,4 +1,4 @@
-import { getIcon, getRandomBackground } from "./index"
+import { getIcon, getRandomBackground } from "./index.js"
   
 window.onload = function main(): void {
   const bgColor = getRandomBackground()
