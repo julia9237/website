@@ -32,7 +32,7 @@
 
 :root {
     --text-main: rgb(33,33,33);
-         --link: rgb(66,66,66);
+    --text-link: rgb(66,66,66);
 }
 
 
@@ -41,6 +41,7 @@ h2,
 div,
 html,
 a,
+p,
 :visited {
             display: inline-block;
              resize: none;
@@ -76,8 +77,13 @@ a {
              cursor: pointer;
             display: inline-block;
     text-decoration: underline;
-              color: var(--link) !important;
+              color: var(--text-link) !important;
           font-size: 42px;
+}
+
+p {
+    max-width: 600px;
+    font-size: 32px;
 }
 
 div#header {
