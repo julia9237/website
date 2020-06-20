@@ -2,32 +2,32 @@
 
 @font-face {
     font-family: "Exo2-ExtraLight";
-            src: url(./src/font/Exo2-ExtraLight.otf) format("opentype");
+    src: url(./src/font/Exo2-ExtraLight.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Exo2-ExtraLightItalic";
-            src: url(./src/font/Exo2-ExtraLightItalic.otf) format("opentype");
+    src: url(./src/font/Exo2-ExtraLightItalic.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Exo2-Regular";
-            src: url(./src/font/Exo2-Regular.otf) format("opentype");
+    src: url(./src/font/Exo2-Regular.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Exo2-Italic";
-            src: url(./src/font/Exo2-Italic.otf) format("opentype");
+    src: url(./src/font/Exo2-Italic.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Exo2-Bold";
-            src: url(./src/font/Exo2-Bold.otf) format("opentype");
+    src: url(./src/font/Exo2-Bold.otf) format("opentype");
 }
 
 @font-face {
     font-family: "Exo2-BoldItalic";
-            src: url(./src/font/Exo2-BoldItalic.otf) format("opentype");
+    src: url(./src/font/Exo2-BoldItalic.otf) format("opentype");
 }
 
 :root {
@@ -43,16 +43,16 @@ html,
 a,
 p,
 :visited {
-            display: inline-block;
-             resize: none;
-              color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    resize: none;
+    border: none;
+    outline: none;
+    display: inline-block;
     text-decoration: none;
-             margin: 0;
-            padding: 0;
-             border: none;
-            outline: none;
-        font-family: Exo2-Regular;
-   background-color: transparent;
+    color: var(--text-main);
+    font-family: Exo2-Regular;
+    background-color: transparent;
 }
 
 div#header {
@@ -65,7 +65,7 @@ h2 {
 }
 
 h1 {
-       cursor: pointer;
+    cursor: pointer;
     font-size: 64px;
 }
 
@@ -74,26 +74,26 @@ h2 {
 }
 
 a {
-             cursor: pointer;
-            display: inline-block;
+    font-size: 42px;
+    cursor: pointer;
+    display: inline-block;
     text-decoration: underline;
-              color: var(--text-link) !important;
-          font-size: 42px;
+    color: var(--text-link) !important;
 }
 
 p {
-    max-width: 600px;
     font-size: 32px;
+    max-width: 600px;
 }
 
 div#header {
+    margin-left: auto;
     margin-right: auto;
-     margin-left: auto;
-      text-align: center;
+    text-align: center;
 }
 
 ::selection {
-                    color: #000;
+    color: #000;
     text-decoration-color: #000;
-         background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.1);
 }
