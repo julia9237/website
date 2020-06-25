@@ -93,7 +93,5 @@ div#header {
 }
 
 ::selection {
-    color: #000;
-    text-decoration-color: #000;
     background-color: rgba(0,0,0,0.1);
 }
