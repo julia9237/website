@@ -16,7 +16,8 @@ Main is for the text color, bg is the background color and bg2 is currently not 
     --bg: #000;
     --bg2: rgb(66,66,66);
 }
-```~~
+```
+~~
 ~~A color definition can take hex or predefined colors by default, but also rgb with the rgb(r,g,b) function. Currently theme names also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `styles.css`.~~
 
 # Credits
