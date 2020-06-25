@@ -8,7 +8,7 @@ This is my website, that I first created just to try making a website. First it 
 Themes are defined in the `styles.css` file and use 3 colors currently: main, bg and bg2.
 Main is for the text color, bg is the background color and bg2 is currently not used.~~
 
-~~A theme looks like this:
+~~A theme looks like this:~~
 ```
 .theme-name
 {
@@ -17,7 +17,7 @@ Main is for the text color, bg is the background color and bg2 is currently not 
     --bg2: rgb(66,66,66);
 }
 ```
-~~
+
 ~~A color definition can take hex or predefined colors by default, but also rgb with the rgb(r,g,b) function. Currently theme names also have to be added to the `commandHandler.js` file to the `themes` array, so they are recognized. I plan on auto-recognizing themes from the `styles.css`.~~
 
 # Credits
