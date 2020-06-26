@@ -50,7 +50,10 @@ window.onload = function main():void {
     }
   }
 
+  
   const urlParams = new URLSearchParams(window.location.search)
+
+
 
   if(urlParams.has("hex")) {
 
