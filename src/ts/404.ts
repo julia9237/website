@@ -1,4 +1,4 @@
-import { getIcon, getRandomBackground } from "./index.js"
+/*import { getIcon, getRandomBackground } from "./index.js"
   
 window.onload = function main(): void {
   const bgColor = getRandomBackground()
@@ -7,4 +7,4 @@ window.onload = function main(): void {
   
   document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`)
   return
-}
+}*/
