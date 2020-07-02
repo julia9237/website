@@ -96,6 +96,12 @@ div#header {
     background-color: rgba(0,0,0,0.1);
 }
 
+p#pronoun {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 body {
     width: 100vw;
     height: 100vh;
