@@ -1,6 +1,12 @@
-function getRandomBackground(): String {
+document.getElementsByTagName("h1")[0].onclick = function() {window.location.href = "./hi.html"}
+
+/*function getRandomBackground(): String {
 
   const colors = [
+    "82, 205, 247",
+    "247, 168, 184",
+    "254, 255, 254"
+    
     "255, 64, 140",
     "102, 133, 255",
     "102, 204, 255",
@@ -11,6 +17,7 @@ function getRandomBackground(): String {
     "255, 117, 102",
     "255, 102, 102",
     "102, 184, 255",
+    
   ]
 
   return colors[Math.floor(Math.random() * colors.length)]
@@ -79,4 +86,4 @@ window.onload = function main():void {
   return
 }
 
-export { getRandomBackground, getIcon }
+export { getRandomBackground, getIcon }*/
