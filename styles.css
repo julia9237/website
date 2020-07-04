@@ -45,6 +45,7 @@ a,
 p,
 h1,
 h2,
+hr,
 div,
 body,
 html,
@@ -110,7 +111,7 @@ div#infobox {
     padding: 32px;
     display: block;
     border-radius: 6px;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(4px);
     background-color: var(--header-bg);
 }
 
@@ -120,11 +121,12 @@ div#infobox > h2 {
 }
 
 div#infobox > h2 {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 }
 
-div#hSeparator {
+hr {
     height: 4px;
+    border: none;
     background-color: var(--selection);
 }
 
