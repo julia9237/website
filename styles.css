@@ -1,34 +1,6 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: "Exo2-ExtraLight";
-    src: url(./src/font/Exo2-ExtraLight.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Exo2-ExtraLightItalic";
-    src: url(./src/font/Exo2-ExtraLightItalic.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Exo2-Regular";
-    src: url(./src/font/Exo2-Regular.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Exo2-Italic";
-    src: url(./src/font/Exo2-Italic.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Exo2-Bold";
-    src: url(./src/font/Exo2-Bold.otf) format("opentype");
-}
-
-@font-face {
-    font-family: "Exo2-BoldItalic";
-    src: url(./src/font/Exo2-BoldItalic.otf) format("opentype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --selection: rgba(66, 66, 66, 0.2);
@@ -37,8 +9,7 @@
 
     --text-main: rgb(0, 0, 0);
     --text-link: rgb(33, 33, 33);
-    --text-link-decoration: rgba(0, 0, 0, 0.6);
-    --text-link-decoration-hover: rgba(0, 0, 0, 1);
+    --text-link-decoration-hover: rgba(0, 0, 0, 0.6);
 }
 
 a,
@@ -54,11 +25,10 @@ html,
     padding: 0;
     border: none;
     outline: none;
-    display: block;
     text-decoration: none;
     color: var(--text-main);
-    font-family: Exo2-Regular;
     background-color: transparent;
+    font-family: "Inter", sans-serif;
 }
 
 ::selection {
@@ -86,17 +56,18 @@ h2 {
 a:link,
 a#about,
 a:visited {
-    margin: 3px;
     font-size: 42px;
     cursor: pointer;
+    margin-top: 4px;
+    margin-bottom: 4px;
     border-radius: 4px;
     color: var(--text-link);
-    text-decoration: underline;
-    text-decoration-color: var(--text-link-decoration);
+    text-decoration: none;
 }
 
 a:hover,
 a#about:hover {
+    text-decoration: underline;
     text-decoration-color: var(--text-link-decoration-hover);
 }
 
