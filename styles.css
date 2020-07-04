@@ -31,18 +31,14 @@
 }
 
 :root {
+    --selection: rgba(66, 66, 66, 0.2);
+    --header-bg: rgba(0.1, 0.1, 0.1, 0.2);
+
+
     --text-main: rgb(0, 0, 0);
     --text-link: rgb(33, 33, 33);
-    --text-link-hover: rgb(255, 255, 255);
     --text-link-decoration: rgba(0, 0, 0, 0.6);
-    --text-link-decoration-hover: rgba(255, 255, 255, 0.6);
-
-
-    --selection: rgba(66, 66, 66, 0.2);
-
-    --header-bg: rgba(0.1, 0.1, 0.1, 0.17);
-    --header-item-bg: rgba(0, 0, 0, 0.1);
-    --header-item-bg-hover: rgba(255, 255, 255, 0.1);
+    --text-link-decoration-hover: rgba(0, 0, 0, 1);
 }
 
 a,
@@ -55,10 +51,9 @@ html,
 :visited {
     margin: 0;
     padding: 0;
-    resize: none;
     border: none;
     outline: none;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     color: var(--text-main);
     font-family: Exo2-Regular;
@@ -90,19 +85,17 @@ h2 {
 a:link,
 a#about,
 a:visited {
+    margin: 3px;
     font-size: 42px;
     cursor: pointer;
     border-radius: 4px;
     color: var(--text-link);
     text-decoration: underline;
-    background-color: var(--header-item-bg);
     text-decoration-color: var(--text-link-decoration);
 }
 
 a:hover,
 a#about:hover {
-    color: var(--text-link-hover);
-    background-color: var(--header-item-bg-hover);
     text-decoration-color: var(--text-link-decoration-hover);
 }
 
@@ -112,19 +105,30 @@ p {
     color: var(--text-link);
 }
 
-div#header {
+div#infobox {
     width: 690px;
+    padding: 32px;
     display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 4px;
-    padding-bottom: 10px;
+    border-radius: 6px;
+    backdrop-filter: blur(100px);
     background-color: var(--header-bg);
 }
 
-p#pronoun {
+div#infobox > h1,
+div#infobox > h2 {
+    line-height: 0.9;
+}
+
+div#infobox > h2 {
+    padding-bottom: 20px;
+}
+
+div#hSeparator {
+    height: 4px;
+    background-color: var(--selection);
+}
+
+p#pronouns {
     right: 0;
     bottom: 0;
     position: absolute;
@@ -133,6 +137,9 @@ p#pronoun {
 body {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-attachment: fixed;
     background-image: linear-gradient(0deg,
                                     #52CDF7 20%,
