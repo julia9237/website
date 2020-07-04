@@ -2,6 +2,7 @@ document.getElementsByTagName("h1")[0].onclick = function() {window.location.hre
 
 document.getElementById("about").onclick = function() {
   const about = document.getElementById("abouttext")
+  window.getSelection().removeAllRanges()
 
   if(about.getAttribute("style") === "") {
     about.setAttribute("style", "display: none;")
@@ -18,7 +19,7 @@ document.getElementById("about").onclick = function() {
     "82, 205, 247",
     "247, 168, 184",
     "254, 255, 254"
-    
+
     "255, 64, 140",
     "102, 133, 255",
     "102, 204, 255",
@@ -29,7 +30,7 @@ document.getElementById("about").onclick = function() {
     "255, 117, 102",
     "255, 102, 102",
     "102, 184, 255",
-    
+
   ]
 
   return colors[Math.floor(Math.random() * colors.length)]
@@ -63,13 +64,13 @@ window.onload = function main():void {
     if(about.getAttribute("style") === "") {
       about.setAttribute("style", "display: none;")
     }
-    
+
     else {
       about.setAttribute("style", "")
     }
   }
 
-  
+
   const urlParams = new URLSearchParams(window.location.search)
 
 
@@ -88,7 +89,7 @@ window.onload = function main():void {
       "ffffff": "flashbang",
       "ffa8c8": "setsu",
     }
-    
+
     if (hex === "00ff00") alert("why") // vivi suggestion
 
     const word = specialColors[hex] || "wi"
