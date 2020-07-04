@@ -33,11 +33,16 @@
 :root {
     --text-main: rgb(0, 0, 0);
     --text-link: rgb(33, 33, 33);
-    --selection: rgba(66, 66, 66, 0.2);
-    --header-bg: rgba(0.1, 0.1, 0.1, 0.17);
     --text-link-hover: rgb(255, 255, 255);
     --text-link-decoration: rgba(0, 0, 0, 0.6);
     --text-link-decoration-hover: rgba(255, 255, 255, 0.6);
+
+
+    --selection: rgba(66, 66, 66, 0.2);
+
+    --header-bg: rgba(0.1, 0.1, 0.1, 0.17);
+    --header-item-bg: rgba(0, 0, 0, 0.1);
+    --header-item-bg-hover: rgba(255, 255, 255, 0.1);
 }
 
 a,
@@ -87,14 +92,17 @@ a#about,
 a:visited {
     font-size: 42px;
     cursor: pointer;
+    border-radius: 4px;
     color: var(--text-link);
     text-decoration: underline;
+    background-color: var(--header-item-bg);
     text-decoration-color: var(--text-link-decoration);
 }
 
 a:hover,
 a#about:hover {
     color: var(--text-link-hover);
+    background-color: var(--header-item-bg-hover);
     text-decoration-color: var(--text-link-decoration-hover);
 }
 
