@@ -111,7 +111,7 @@ div#infobox {
     padding: 32px;
     display: block;
     border-radius: 6px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(20px);
     background-color: var(--header-bg);
 }
 
