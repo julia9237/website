@@ -1,4 +1,4 @@
-window.onload = function main() {
+window.onload = function () {
     const hihelloGen = new Worker('hihello.ts');
     const hihelloGenDelay = window.setInterval(hihelloSpam, 500);
     function hihelloSpam() {

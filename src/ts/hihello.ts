@@ -1,16 +1,10 @@
-//import { getIcon, getRandomBackground } from "./index.js"
-
-window.onload = function main() {
-  //const bgColor = getRandomBackground()
-  //document.getElementsByClassName("icon")[0].setAttribute("href", getIcon(bgColor, 0).toString())
-  //document.getElementsByTagName("html")[0].setAttribute("style", `background-color: rgb(${bgColor})`)
-
+window.onload = function() {
 
   const hihelloGen = new Worker('hihello.ts')
   const hihelloGenDelay = window.setInterval(hihelloSpam, 500)
 
   function hihelloSpam(): void {
-    
+
     const body = document.getElementsByTagName("body")[0]
     switch(Math.floor(Math.random() * 2)) {
       case 0:
