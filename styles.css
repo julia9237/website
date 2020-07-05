@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --selection: rgba(66, 66, 66, 0.2);
-    --header-bg: rgba(0.1, 0.1, 0.1, 0.2);
+    --selection: rgba(255, 255, 255, 0.6);
+    --header-bg: rgba(0, 0, 0, 0.6);
 
 
-    --text-main: rgb(0, 0, 0);
-    --text-link: rgb(33, 33, 33);
-    --text-link-decoration-hover: rgba(0, 0, 0, 0.6);
+    --text-main: rgb(255, 255, 255);
+    --text-link: rgb(233, 233, 233);
+    --text-link-decoration-hover: rgba(200, 200, 200, 0.6);
 }
 
 .goodbye {
@@ -49,11 +49,26 @@ h2 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 48px;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+div#infobox > h1,
+div#infobox > h2 {
+    line-height: 0.9;
+}
+
+div#infobox > h2 {
+    padding-bottom: 18px;
+}
+
+#hihello:hover {
+    cursor: pointer;
 }
 
 a:link,
@@ -88,18 +103,12 @@ div#infobox {
     background-color: var(--header-bg);
 }
 
-div#infobox > h1,
-div#infobox > h2 {
-    line-height: 0.9;
-}
-
-div#infobox > h2 {
-    padding-bottom: 18px;
-}
-
 hr {
     height: 4px;
     border: none;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 10px;
     background-color: var(--selection);
 }
 
