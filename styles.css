@@ -99,8 +99,10 @@ div#infobox {
     padding: 32px;
     display: block;
     border-radius: 6px;
+    border: 3px solid #fff;
     backdrop-filter: blur(20px);
     background-color: var(--header-bg);
+    box-shadow: 0 0 0 4px var(--header-bg);
 }
 
 hr {
