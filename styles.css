@@ -12,6 +12,10 @@
     --text-link-decoration-hover: rgba(0, 0, 0, 0.6);
 }
 
+.goodbye {
+    display: none;
+}
+
 a,
 p,
 h1,
