@@ -89,7 +89,7 @@ div#infobox {
     backdrop-filter: blur(20px);
     background-color: var(--infobox-bg);
     border: 8px solid var(--infobox-border);
-    box-shadow: 4px 4px 0 4px var(--infobox-shadow);
+    box-shadow: 12px 12px 0 4px var(--infobox-shadow);
 
 }
 
