@@ -106,13 +106,19 @@ p#pronouns {
     position: absolute;
 }
 
+div#Underlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-attachment: fixed;
     background-image: linear-gradient(0deg,
                                     #52CDF7 20%,
                                     #F7A8B7 20%, #F7A8B7 40%,
