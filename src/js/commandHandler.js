@@ -1,4 +1,4 @@
-var validCommands = [
+const validCommands = [
   "help",
   "theme",
   "themes",
@@ -9,17 +9,17 @@ var validCommands = [
   "clear",
 ];
 
-var hiddenCommands = ["dicks", "balls"];
-var themes = ["dark", "light", "purple", "zebra", "green", "red", "blue"];
+const hiddenCommands = ["dicks", "balls"];
+const themes = ["dark", "light", "purple", "zebra", "green", "red", "blue"];
 
 function focusCMD() {
   document.getElementById("focus").focus();
 }
 
 function resizeTextarea() {
-  var lastCommand = document.getElementById("focus");
+  const lastCommand = document.getElementById("focus");
   if (lastCommand.value.length != 0) {
-    var divGetHeight = document.getElementById("getHeight");
+    const divGetHeight = document.getElementById("getHeight");
     divGetHeight.innerHTML = lastCommand.value;
     lastCommand.setAttribute(
       "style",
@@ -33,11 +33,11 @@ function themeSwitch(themeName) {
 }
 
 function submitt() {
-  var lastCommand = document.getElementById("focus");
+  const lastCommand = document.getElementById("focus");
   lastCommand.setAttribute("readonly", "");
 
   //get textarea size
-  var divGetHeight = document.getElementById("getHeight");
+  const divGetHeight = document.getElementById("getHeight");
   divGetHeight.setAttribute("id", "getHeight");
   divGetHeight.innerHTML = lastCommand.value;
   lastCommand.setAttribute(
@@ -52,7 +52,7 @@ function submitt() {
       }`
     );
 
-    var commandResponse = document.createElement("textarea");
+    const commandResponse = document.createElement("textarea");
     commandResponse.setAttribute("readonly", "");
     commandResponse.setAttribute("class", "resp");
     commandResponse.setAttribute(
@@ -60,7 +60,7 @@ function submitt() {
       "height: " + divGetHeight.offsetHeight + "px"
     );
     document.getElementById("main").appendChild(commandResponse);
-    var commandParts = lastCommand.value.split(" ");
+    const commandParts = lastCommand.value.split(" ");
 
     if (
       validCommands.includes(commandParts[0]) ||
@@ -112,7 +112,7 @@ function submitt() {
     console.log(`Response: ${commandResponse.value}`);
   }
 
-  var newCommand = document.createElement("textarea");
+  const newCommand = document.createElement("textarea");
   document.getElementById("main").appendChild(newCommand);
   newCommand.setAttribute("class", "cmd");
   newCommand.setAttribute("id", "focus");
