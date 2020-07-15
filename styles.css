@@ -1,23 +1,22 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
 :root {
-    --selection: rgba(255, 255, 255, 0.4);
-    --separator: rgba(255, 255, 255, 0.35);
+  --selection: rgba(255, 255, 255, 0.4);
+  --separator: rgba(255, 255, 255, 0.35);
 
-    --infobox-bg: rgba(0, 0, 0, 0.8);
-    --infobox-border: rgb(233, 233, 233);
-    --infobox-shadow: rgba(0, 0, 0, 0.4);
+  --infobox-bg: rgba(0, 0, 0, 0.8);
+  --infobox-border: rgb(233, 233, 233);
+  --infobox-shadow: rgba(0, 0, 0, 0.4);
 
-
-    --text-main: rgb(255, 255, 255);
-    --text-link: rgb(233, 233, 233);
-    --text-link-decoration-hover: rgba(200, 200, 200, 0.6);
+  --text-main: rgb(255, 255, 255);
+  --text-link: rgb(233, 233, 233);
+  --text-link-decoration-hover: rgba(200, 200, 200, 0.6);
 }
 
 .goodbye {
-    display: none;
+  display: none;
 }
 
 a,
@@ -28,107 +27,111 @@ div,
 body,
 html,
 :visited {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    color: var(--text-main);
-    background-color: transparent;
-    font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: var(--text-main);
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
 }
 
 ::selection {
-    background-color: var(--selection);
+  background-color: var(--selection);
 }
 
 html {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 div#infobox > h1 {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 0.9;
-    margin-bottom: 10px;
-    display: inline-block;
-    color: var(--text-main);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 0.9;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: var(--text-main);
 }
 
 #hihello:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a:link,
 a#about,
 a:visited {
-    font-size: 42px;
-    cursor: pointer;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border-radius: 4px;
-    color: var(--text-link);
-    text-decoration: none;
+  font-size: 42px;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  color: var(--text-link);
+  text-decoration: none;
 }
 
 a:hover,
 a#about:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--text-link-decoration-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--text-link-decoration-hover);
 }
 
 p {
-    font-size: 32px;
-    max-width: 600px;
-    color: var(--text-link);
+  font-size: 32px;
+  max-width: 600px;
+  color: var(--text-link);
 }
 
 div#infobox {
-    padding: 32px;
-    display: block;
-    backdrop-filter: blur(20px);
-    background-color: var(--infobox-bg);
-    border: 8px solid var(--infobox-border);
-    box-shadow: 12px 12px 0 4px var(--infobox-shadow);
-
+  padding: 32px;
+  display: block;
+  backdrop-filter: blur(20px);
+  background-color: var(--infobox-bg);
+  border: 8px solid var(--infobox-border);
+  box-shadow: 12px 12px 0 4px var(--infobox-shadow);
 }
 
 hr {
-    height: 4px;
-    border: none;
-    margin: 10px 0px 10px 0px;
-    background-color: var(--separator);
+  height: 4px;
+  border: none;
+  margin: 10px 0px 10px 0px;
+  background-color: var(--separator);
 }
 
 p#pronouns {
-    right: 0;
-    bottom: 0;
-    position: absolute;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 div#underlay {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    background-image: linear-gradient(0deg,
-                                    #52CDF7 20%,
-                                    #F7A8B7 20%, #F7A8B7 40%,
-                                    #FEFFFE 40%, #FEFFFE 60%,
-                                    #F7A8B7 60%, #F7A8B7 80%,
-                                    #52CDF7 80%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    0deg,
+    #52cdf7 20%,
+    #f7a8b7 20%,
+    #f7a8b7 40%,
+    #fefffe 40%,
+    #fefffe 60%,
+    #f7a8b7 60%,
+    #f7a8b7 80%,
+    #52cdf7 80%
+  );
 }
