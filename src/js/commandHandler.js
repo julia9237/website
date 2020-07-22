@@ -96,7 +96,7 @@ function submitt() {
         case "close":
         case "quit":
         case "exit":
-          window.location.href = "./index.html"
+          window.location.href = "./index.html";
           break;
         case "clear":
           document.getElementById("main").innerHTML = null;
