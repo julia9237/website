@@ -24,4 +24,4 @@ Main is for the text color, bg is the background color and bg2 is currently not 
 
 ### Terminal Font
 
-* PxPlus IBM VGA9: https://int10h.org/oldschool-pc-fonts/fontlist/#ibmvgamcga
+* PxPlus IBM VGA9: https://int10h.org/oldschool-pc-fonts/fontlist/font?ibm_vga_9x16
