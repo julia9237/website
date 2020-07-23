@@ -46,13 +46,22 @@ html {
   overflow: hidden;
 }
 
-div#infobox>h1 {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 0.9;
-  margin-bottom: 10px;
-  display: inline-block;
-  color: $text-main;
+div#infobox {
+  padding: 32px;
+  display: block;
+  backdrop-filter: blur(20px);
+  background-color: $infobox-bg;
+  border: 8px solid $infobox-border;
+  box-shadow: 12px 12px 0 4px $infobox-shadow;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 0.9;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: $text-main;
+  }
 }
 
 #hihello:hover {
@@ -83,13 +92,10 @@ p {
   color: $text-link;
 }
 
-div#infobox {
-  padding: 32px;
-  display: block;
-  backdrop-filter: blur(20px);
-  background-color: $infobox-bg;
-  border: 8px solid $infobox-border;
-  box-shadow: 12px 12px 0 4px $infobox-shadow;
+p#pronouns {
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 hr {
@@ -97,12 +103,6 @@ hr {
   border: none;
   margin: 10px 0px 10px 0px;
   background-color: $separator;
-}
-
-p#pronouns {
-  right: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 div#underlay {

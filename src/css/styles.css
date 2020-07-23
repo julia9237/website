@@ -29,7 +29,15 @@ html {
   overflow: hidden;
 }
 
-div#infobox > h1 {
+div#infobox {
+  padding: 32px;
+  display: block;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 8px solid #e9e9e9;
+  box-shadow: 12px 12px 0 4px rgba(0, 0, 0, 0.4);
+}
+div#infobox h1 {
   font-size: 48px;
   font-weight: 600;
   line-height: 0.9;
@@ -66,13 +74,10 @@ p {
   color: #e9e9e9;
 }
 
-div#infobox {
-  padding: 32px;
-  display: block;
-  backdrop-filter: blur(20px);
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 8px solid #e9e9e9;
-  box-shadow: 12px 12px 0 4px rgba(0, 0, 0, 0.4);
+p#pronouns {
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 hr {
@@ -80,12 +85,6 @@ hr {
   border: none;
   margin: 10px 0px 10px 0px;
   background-color: rgba(255, 255, 255, 0.35);
-}
-
-p#pronouns {
-  right: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 div#underlay {
