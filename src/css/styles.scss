@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+$selection: rgba(255, 255, 255, 0.4);
+$separator: rgba(255, 255, 255, 0.35);
+$underlay: rgba(0, 0, 0, 0.4);
+
+$infobox-bg: rgba(0, 0, 0, 0.8);
+$infobox-border: rgb(233, 233, 233);
+$infobox-shadow: rgba(0, 0, 0, 0.4);
+
+$text-main: rgb(255, 255, 255);
+$text-link: rgb(233, 233, 233);
+$text-link-decoration-hover: rgba(200, 200, 200, 0.6);
+
+$font-main: "Inter";
+$font-any: $font-main,
+sans-serif;
+
 .goodbye {
   display: none;
 }
@@ -16,26 +33,26 @@ html,
   border: none;
   outline: none;
   text-decoration: none;
-  color: white;
+  color: $text-main;
   background-color: transparent;
-  font-family: "Inter", sans-serif;
+  font-family: $font-any;
 }
 
 ::selection {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: $selection;
 }
 
 html {
   overflow: hidden;
 }
 
-div#infobox > h1 {
+div#infobox>h1 {
   font-size: 48px;
   font-weight: 600;
   line-height: 0.9;
   margin-bottom: 10px;
   display: inline-block;
-  color: white;
+  color: $text-main;
 }
 
 #hihello:hover {
@@ -50,36 +67,36 @@ a:visited {
   margin-top: 4px;
   margin-bottom: 4px;
   border-radius: 4px;
-  color: #e9e9e9;
+  color: $text-link;
   text-decoration: none;
 }
 
 a:hover,
 a#about:hover {
   text-decoration: underline;
-  text-decoration-color: rgba(200, 200, 200, 0.6);
+  text-decoration-color: $text-link-decoration-hover;
 }
 
 p {
   font-size: 32px;
   max-width: 600px;
-  color: #e9e9e9;
+  color: $text-link;
 }
 
 div#infobox {
   padding: 32px;
   display: block;
   backdrop-filter: blur(20px);
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 8px solid #e9e9e9;
-  box-shadow: 12px 12px 0 4px rgba(0, 0, 0, 0.4);
+  background-color: $infobox-bg;
+  border: 8px solid $infobox-border;
+  box-shadow: 12px 12px 0 4px $infobox-shadow;
 }
 
 hr {
   height: 4px;
   border: none;
   margin: 10px 0px 10px 0px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: $separator;
 }
 
 p#pronouns {
@@ -97,7 +114,7 @@ div#underlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: $underlay;
 }
 
 body {
@@ -107,7 +124,13 @@ body {
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
-  background-image: linear-gradient(0deg, #52cdf7 20%, #f7a8b7 20%, #f7a8b7 40%, #fefffe 40%, #fefffe 60%, #f7a8b7 60%, #f7a8b7 80%, #52cdf7 80%);
+  background-image: linear-gradient(0deg,
+      #52cdf7 20%,
+      #f7a8b7 20%,
+      #f7a8b7 40%,
+      #fefffe 40%,
+      #fefffe 60%,
+      #f7a8b7 60%,
+      #f7a8b7 80%,
+      #52cdf7 80%);
 }
-
-/*# sourceMappingURL=styles.css.map */
