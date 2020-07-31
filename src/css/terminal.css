@@ -54,16 +54,10 @@
 
 @font-face {
   font-family: "PxPlus_IBM_VGA9";
-  src: url(./src/font/PxPlus_IBM_VGA_9x16.ttf);
+  src: url(../font/PxPlus_IBM_VGA_9x16.ttf);
 }
 
 html {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   scroll-behavior: smooth;
   overflow: hidden;
   width: 100%;
@@ -72,7 +66,7 @@ html {
   font-size: var(--fs);
   margin: 0px;
   padding: 0px;
-  font-family: "PxPlus_IBM_VGA9";
+  font-family: "PxPlus_IBM_VGA9", monospace;
   background-color: rgb(33, 33, 33);
 }
 
