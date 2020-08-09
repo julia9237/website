@@ -1,0 +1,112 @@
+@font-face {
+    font-family: fonttt;
+    src: url(font/Web_AMI_EGA_8x14.woff);
+}
+
+:root {
+    --font: fonttt;
+    --grey: #b8b8b8;
+    --blue: #0000ab;
+    /* 0000ab */
+
+    --highlight: #fff;
+    --locked: #636363;
+
+    --header-size: 42px;
+    --normal-size: 34px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    cursor: default;
+
+    font-family: var(--font);
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+
+    width: 100vw;
+    height: 100vh;
+
+    color: var(--grey);
+    background-color: var(--blue);
+}
+
+#locked {
+    color: var(--locked)
+}
+
+#header {
+    color: var(--highlight);
+
+    font-size: var(--header-size);
+
+    text-align: center;
+}
+
+#tabs {
+    padding-left: 5%;
+    padding-right: 25%;
+
+    font-size: 0;
+    justify-content: space-evenly;
+
+    display: flex;
+
+    color: var(--grey);
+    background-color: var(--blue);
+}
+
+tab {
+    display: inline-block;
+
+    font-size: var(--normal-size)
+}
+
+tab#selected {
+    color: var(--blue);
+    background-color: var(--grey);
+}
+
+#content,
+#content-border {
+    color: var(--blue);
+    background-color: var(--grey);
+}
+
+#content {
+    display: flex;
+
+    flex-grow: 1;
+
+    font-size: var(--normal-size);
+    /* top right bot left */
+    padding: 20px 10px 20px 10px;
+}
+
+#content-border {
+    padding: 40px;
+
+    flex-grow: 1;
+
+    border-style: solid;
+    border-color: var(--blue);
+    border-width: 4px 6px 4px 6px;
+
+    color: var(--blue);
+    background-color: var(--grey);
+}
+
+#footer {
+    text-align: center;
+    font-size: 36px;
+}
+
+bye {
+    cursor: pointer;
+    color: var(--highlight)
+}
