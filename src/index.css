@@ -5,12 +5,11 @@
 
 :root {
     --font: fonttt;
-    --grey: #b8b8b8;
-    --blue: #0000ab;
-    /* 0000ab */
+    --grey: #aaa;
+    --blue: #00a;
 
     --highlight: #fff;
-    --locked: #636363;
+    --locked: #555;
 
     --header-size: 42px;
     --normal-size: 34px;
