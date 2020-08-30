@@ -100,7 +100,7 @@ tab#selected {
     background-color: var(--grey);
 }
 
-#footer {
+footer {
     text-align: center;
     font-size: 36px;
 }
