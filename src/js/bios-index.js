@@ -1,4 +1,4 @@
-import { tabnext, tabprev } from "./tabSwitch.js";
+import { tabnext, tabprev } from "./bios-tabSwitch.js";
 const tabs = document.getElementsByTagName("tab");
 const left = 37;
 const right = 39;
