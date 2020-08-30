@@ -118,6 +118,12 @@ h3 {
     font-size: var(--header3-size);
 }
 
+thead > tr > th {
+    text-align: left;
+
+    padding: 16px;
+}
+
 td {
     padding: 16px;
 
