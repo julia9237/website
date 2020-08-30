@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+    --font: Inter;
+
+    --header1-size: 42px;
+    --header3-size: 32px;
+    --text-size: 20px;
+
+    --color-header: #f7d6ff;
+    --color-primary: #eeaaff;
+    --color-primary-lighter: #f0b5ff;
+    --color-secondary: #1e1e1e;
+    --color-secondary-invert: #e1e1e1;
+    --color-secondary-lighter: #242424;
+    --color-secondary-darker: #121212;
+    --color-highlight: #818181;
+    --color-accent: #aaeeff;
+    --color-link: #ffeacf;
+}
+
+:link {
+    color: var(--color-link);
+
+    text-decoration: none;
+}
+
+:visited {
+    color: var(--color-link);
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+    font-family: var(--font);
+}
+
+html {
+    width: 100vw;
+
+    display: flex;
+
+    justify-content: center;
+
+    background-color: var(--color-secondary-invert);
+}
+
+header,
+body,
+footer,
+#table {
+    width: 900px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+header {
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+body {
+    margin-top: 40px;
+    box-shadow: 60px -20px var(--color-secondary-darker);
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+h1,
+h3 {
+    margin: 0;
+    padding: 0;
+
+    color: var(--color-header);
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: var(--header1-size);
+}
+
+h3 {
+    padding-bottom: 80px;
+
+    font-size: var(--header3-size);
+}
+
+td,
+table {
+    border: 1px solid var(--color-accent);
+}
+
+td {
+    padding: 16px;
+}
+
+th {
+    padding: 8px;
+
+    color: var(--color-primary-lighter);
+    background-color: var(--color-secondary-lighter);
+}
+
+footer {
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    text-align: right;
+    align-content: flex-end;
+    justify-content: center;
+
+    color: var(--color-header);
+
+    font-size: var(--header3-size);
+}
