@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 :root {
     --font: Inter;
@@ -75,12 +75,26 @@ header {
 
 body {
     margin-top: 40px;
+
     box-shadow: 60px -20px var(--color-secondary-darker);
 }
 
 footer {
     padding-top: 40px;
     padding-bottom: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    text-align: right;
+    align-content: flex-end;
+    justify-content: center;
+
+    color: var(--color-header);
+
+    font-size: var(--header3-size);
 }
 
 h1,
@@ -104,13 +118,14 @@ h3 {
     font-size: var(--header3-size);
 }
 
-td,
-table {
-    border: 1px solid var(--color-accent);
-}
-
 td {
     padding: 16px;
+
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+tr:last-of-type > td {
+    border: none;
 }
 
 th {
@@ -120,17 +135,6 @@ th {
     background-color: var(--color-secondary-lighter);
 }
 
-footer {
-    display: flex;
-
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    text-align: right;
-    align-content: flex-end;
-    justify-content: center;
-
-    color: var(--color-header);
-
-    font-size: var(--header3-size);
+table {
+    border-collapse: collapse;
 }
