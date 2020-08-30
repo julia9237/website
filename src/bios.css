@@ -36,7 +36,7 @@ body {
 }
 
 #locked {
-    color: var(--locked)
+    color: var(--locked);
 }
 
 #header {
@@ -63,7 +63,7 @@ body {
 tab {
     display: inline-block;
 
-    font-size: var(--normal-size)
+    font-size: var(--normal-size);
 }
 
 tab#selected {
@@ -105,7 +105,8 @@ tab#selected {
     font-size: 36px;
 }
 
-bye {
+#bye {
     cursor: pointer;
-    color: var(--highlight)
+    text-decoration: none;
+    color: var(--highlight);
 }
