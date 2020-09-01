@@ -9,7 +9,7 @@
 
     --color-header: #f7d6ff;
     --color-primary: #eeaaff;
-    --color-primary-lighter: #f0b5ff;
+    --color-primary-lighter: #f2bfff;
     --color-secondary: #1e1e1e;
     --color-secondary-invert: #e1e1e1;
     --color-secondary-lighter: #242424;
@@ -19,19 +19,17 @@
     --color-link: #ffeacf;
 }
 
-:link {
-    color: var(--color-link);
-
-    text-decoration: none;
-}
-
+:link,
 :visited {
-    color: var(--color-link);
+    color: var(--color-primary-lighter);
 
     text-decoration: none;
 }
 
-a:hover {
+:link:hover,
+:visited:hover{
+    color: var(--color-link);
+
     text-decoration: underline;
 }
 
