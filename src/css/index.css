@@ -154,10 +154,7 @@ table {
 }
 
 #github {
-    margin: 4px;
     padding: 20px 40px 20px 40px;
-
-    border-radius: 4px;
 
     position: absolute;
     right: 0;
