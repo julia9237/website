@@ -48,7 +48,6 @@ class Rect {
     }
   
     if(newY >= canvas.height - height) {
-      console.log("have you pooped today?")
       //this.yVelocity = -Math.abs(yVelocity);
       this.y = 0;
     }
