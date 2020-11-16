@@ -24,7 +24,7 @@ class Rect {
     this.height =  height;
 
     this.xVelocity = 0;
-    this.yVelocity = clamp(Math.random() * 25, 10, 25);
+    this.yVelocity = clamp(Math.random() * 25, 15, 25);
 
     this.color = colors[Math.floor(Math.random() * colors.length)];
     this.opacity = Math.floor(Math.random() * 10)
@@ -44,11 +44,11 @@ class Rect {
 
     if(newX >= canvas.width - width) {
       //this.xVelocity = -Math.abs(xVelocity);
-      this.x = 0;
     }
   
     if(newY >= canvas.height - height) {
       //this.yVelocity = -Math.abs(yVelocity);
+      this.x = Math.random() * canvas.width;
       this.y = 0;
     }
   
