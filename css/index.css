@@ -4,7 +4,7 @@
 :root {
     --fg: #e2e2e2;
     --mg: #4e4e4e;
-    --bg: #2e2e2e;
+    --bg: linear-gradient(0deg, rgba(24, 23, 40, 1) 0%, rgba(55, 55, 65, 1) 100%);
 
     --fg-lk: #a2a2a2;
     --bg-lk: #1e1e1e;
@@ -37,7 +37,17 @@ body {
     /* TODO: add webkit scrollbar */
 
     color: var(--fg);
-    background-color: var(--bg);
+    background: var(--bg);
+}
+
+canvas {
+    position: fixed;
+    inset: 0px;
+
+    z-index: -999;
+
+    width: 100%;
+    height: 100%;
 }
 
 a,
@@ -59,60 +69,4 @@ a:hover,
     color: var(--fg);
 
     text-decoration: underline;
-}
-
-#side-bar {
-    width: 15vw;
-    height: 100vh;
-    padding: 8px 6px 8px 6px;
-
-    float: right;
-    position: fixed;
-
-    background-color: var(--mg);
-    border-left: 4px solid var(--fg);
-}
-
-#links {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    height: 5%;
-}
-
-#links > a {
-    font-size: var(--fnt-sz-mnlnk);
-
-    background-color: transparent;
-}
-
-#side-nav {
-    height: 95%;
-    width: 100%;
-}
-
-#side-nav a {
-    display: block;
-
-    margin-bottom: 6px;
-}
-
-#side-nav > div > a {
-    width: 80%;
-    float: right;
-}
-
-#content {
-    width: 100%;
-
-    word-wrap: break-word;
-
-    float: left;
-    padding-left: 4px;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: var(--fnt-sz-h1);
 }
