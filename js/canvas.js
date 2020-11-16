@@ -12,8 +12,7 @@ const colors = [
   "165, 175, 210",
   "139, 147, 186",
   "113, 121, 161"
-];
-//https://www.color-hex.com/color-palette/33750
+]; //https://www.color-hex.com/color-palette/33750
 
 class Rect {
   constructor(x, y, width, height) {
@@ -66,6 +65,7 @@ class Rect {
     context.fillRect(x, y, width, height);
   }
 }
+
 const rects = new Array(2700).fill().map(() => new Rect(Math.random() * canvas.width, Math.random() * canvas.height, 3, 10));
 
 function frame() {
