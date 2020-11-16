@@ -46,7 +46,7 @@ class Rect {
       //this.xVelocity = -Math.abs(xVelocity);
     }
   
-    if(newY >= canvas.height - height) {
+    if(newY >= canvas.height + height) {
       //this.yVelocity = -Math.abs(yVelocity);
       this.x = Math.random() * canvas.width;
       this.y = 0;
