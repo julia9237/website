@@ -33,8 +33,8 @@ class Rect {
   render(context) {
     const {x, y, width, height, xVelocity, yVelocity, style, color, opacity} = this;
 
-    const xRandom = Math.random() * xVelocity / .6;
-    const yRandom = Math.random() * yVelocity / .6;
+    //const xRandom = Math.random() * xVelocity / .6;
+    //const yRandom = Math.random() * yVelocity / .6;
 
     const newX = x + xVelocity //+ xRandom;
     const newY = y + yVelocity //+ yRandom;
