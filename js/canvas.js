@@ -30,7 +30,7 @@ class Rect {
   }
   
   render(context) {
-    const {x, y, width, height, xVelocity, yVelocity, style, color, opacity} = this;
+    const {x, y, width, height, xVelocity, yVelocity, color, opacity} = this;
 
     //const xRandom = Math.random() * xVelocity / .6;
     //const yRandom = Math.random() * yVelocity / .6;
@@ -41,9 +41,11 @@ class Rect {
     this.x = clamp(newX, 0, canvas.width);
     this.y = clamp(newY, 0, canvas.height);
 
+    /*
     if(newX >= canvas.width - width) {
-      //this.xVelocity = -Math.abs(xVelocity);
+      this.xVelocity = -Math.abs(xVelocity);
     }
+    */
   
     if(newY >= canvas.height + height) {
       //this.yVelocity = -Math.abs(yVelocity);
