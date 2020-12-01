@@ -39,7 +39,7 @@ div:not(:last-child) {
 }
 
 .note {
-    color: #ffaaaa;
+    color: #aaaaaa;
 
     position: absolute;
 
@@ -48,7 +48,26 @@ div:not(:last-child) {
 
     white-space: normal;
 
-    padding: var(--padding);
+    margin: var(--padding);
+}
+
+.note::before {
+    content: "Note: ";
+
+    color: #ffaaaa;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+avisited:hover {
+    cursor: pointer;
+
+    text-decoration: underline;
+    text-decoration-color: #ffaaaa;
 }
 
 .default {
@@ -149,6 +168,10 @@ div:not(:last-child) {
 
 .copy {
     cursor: copy;
+}
+
+.context-menu {
+    cursor: context-menu;
 }
 
 .n-resize {
