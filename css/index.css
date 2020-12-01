@@ -6,13 +6,18 @@
     --middleground: #4e4e4e;
     --background: linear-gradient(0deg, rgba(24, 23, 40, 1) 0%, rgba(55, 55, 65, 1) 100%);
 
-    --link-color: #a2a2a2;
-    --link-background: #1e1e1e;
+    --link-color: #eeaaff;
+    --link-background: #2e2e2e;
 
     --font: "Roboto Mono", monospace;
     --font-size: 24px;
     --font-size-h1: 32px;
     --font-size-mnlnk: 16px; /* ? */
+
+    --body-margin: 12px;
+    --body-padding: 12px;
+    --body-background: #11111180;
+    --border-radius: 4px;
 }
 
 * {
@@ -26,14 +31,6 @@
     font-size: var(--font-size);
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-
-    color: var(--foreground);
-    background: var(--background);
-}
-
 canvas {
     position: fixed;
     inset: 0px;
@@ -44,23 +41,49 @@ canvas {
     height: 100%;
 }
 
-a,
-:link,
-:visited {
-    padding: 2px 4px;
-    border-radius: 4px;
+body {
+    width: 100vw;
+    height: 100vh;
 
-    cursor: pointer;
+    color: var(--foreground);
+    background: var(--background);
+}
+
+#body {
+    border-radius: var(--border-radius);
+
+    display: inline-block;
+    margin: var(--body-margin);
+    padding: var(--body-padding);
+
+    backdrop-filter: blur(10px);
+    background-color: var(--body-background);
+}
+
+a,
+:visited {
+    /* padding: 2px 4px;
+    border-radius: 4px; */
+
     text-decoration: none;
 
     color: var(--link-color);
-    background-color: var(--link-background);
+
+    white-space: normal;
+
+    /* background-color: var(--link-background); */
 }
 
 a:hover,
-:link:hover,
 :visited:hover {
-    color: var(--foreground);
+    cursor: pointer;
 
     text-decoration: underline;
+}
+
+a svg {
+    display: inline-block;
+
+    height: var(--font-size);
+    width: var(--font-size);
 }
