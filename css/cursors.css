@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+
+    color: #fff;
+    background-color: #2e2e2e;
+}
+
+div {
+    width: 99.8vw;
+    height: 100px;
+
+    border: 2px solid rebeccapurple;
+    background-color: transparent;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.resize-vertical {
+    cursor: n-resize;
+}
+
+.resize-horizontal {
+    cursor: w-resize;
+}
+
+.resize-diagonal1 {
+    cursor: nw-resize;
+}
+
+.resize-diagonal2 {
+    cursor: ne-resize;
+}
