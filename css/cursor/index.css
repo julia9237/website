@@ -26,6 +26,8 @@
     margin: 0;
     padding: 0;
 
+    box-sizing: border-box;
+
     scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
     scrollbar-width: thin;
 }
