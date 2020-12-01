@@ -4,7 +4,11 @@
 :root {
     --foreground: #e2e2e2;
     --middleground: #4e4e4e;
-    --background: linear-gradient(0deg, rgba(24, 23, 40, 1) 0%, rgba(55, 55, 65, 1) 100%);
+    --background: linear-gradient(
+        0deg,
+        rgba(24, 23, 40, 1) 0%,
+        rgba(55, 55, 65, 1) 100%
+    );
 
     --link-color: #eeaaff;
     --link-background: #2e2e2e;
