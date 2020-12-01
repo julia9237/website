@@ -1,3 +1,8 @@
+:root {
+    --height: 150px;
+    --padding: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,34 +11,174 @@
 body {
     overflow-x: hidden;
 
-    color: #fff;
     background-color: #2e2e2e;
+
+    padding: 4px;
 }
 
 div {
-    width: 99.8vw;
-    height: 100px;
+    width: auto;
+    height: var(--height);
 
-    border: 2px solid rebeccapurple;
+    position: relative;
+
+    color: #aaeeff;
     background-color: transparent;
+
+    padding-left: var(--padding);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 4px dashed #eeaaffaf;
+}
+
+div:not(:last-child) {
+    border-bottom: none;
+}
+
+.note {
+    color: #ffaaaa;
+
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+
+    white-space: normal;
+
+    padding: var(--padding);
+}
+
+.default {
+    cursor: default;
+}
+
+.help {
+    cursor: help;
 }
 
 .pointer {
     cursor: pointer;
 }
 
+.text {
+    cursor: text;
+}
+
+.busy {
+    cursor: wait;
+}
+
+.move {
+    cursor: move;
+}
+
+.working-in-background {
+    cursor: progress;
+}
+
 .resize-vertical {
-    cursor: n-resize;
+    cursor: ns-resize;
 }
 
 .resize-horizontal {
-    cursor: w-resize;
+    cursor: ew-resize;
 }
 
 .resize-diagonal1 {
-    cursor: nw-resize;
+    cursor: nwse-resize;
 }
 
 .resize-diagonal2 {
+    cursor: nesw-resize;
+}
+
+.not-allowed {
+    cursor: not-allowed;
+}
+
+.no-drop {
+    cursor: no-drop;
+}
+
+.precision-select {
+    cursor: crosshair;
+}
+
+.zoom-in {
+    cursor: zoom-in;
+}
+
+.zoom-out {
+    cursor: zoom-out;
+}
+
+.grab {
+    cursor: grab;
+}
+
+.grabbing {
+    cursor: grabbing;
+}
+
+.all-scroll {
+    cursor: all-scroll;
+}
+
+.cell {
+    cursor: cell;
+}
+
+.col-resize {
+    cursor: col-resize;
+}
+
+.row-resize {
+    cursor: row-resize;
+}
+
+.vertical-text {
+    cursor: vertical-text;
+}
+
+.alias {
+    cursor: alias;
+}
+
+.copy {
+    cursor: copy;
+}
+
+.n-resize {
+    cursor: n-resize;
+}
+
+.e-resize {
+    cursor: e-resize;
+}
+
+.s-resize {
+    cursor: s-resize;
+}
+
+.w-resize {
+    cursor: w-resize;
+}
+
+.ne-resize {
     cursor: ne-resize;
+}
+
+.nw-resize {
+    cursor: nw-resize;
+}
+
+.se-resize {
+    cursor: se-resize;
+}
+
+.sw-resize {
+    cursor: sw-resize;
 }
