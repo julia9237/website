@@ -97,3 +97,24 @@ a svg {
     height: var(--font-size);
     width: var(--font-size);
 }
+
+#quote {
+    position: absolute;
+
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#quote span {
+    display: block;
+}
+
+#quote > span > span {
+    text-align: right;
+}
