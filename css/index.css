@@ -21,22 +21,8 @@
     --silver: #c0c0c0;
     --white: #ffffff;
 
-    --highlight: #fff;
-    --locked: #555;
-
-    --link-color: #eeaaff;
-    --link-background: #2e2e2e;
-    --link-underline-color-hover: #eeeeee;
-
     --font: "Perfect DOS VGA 437 Win", monospace;
     --font-size: 24px;
-    --font-size-h1: 32px;
-    --font-size-mnlnk: 16px; /* ? */
-
-    --body-margin: 12px;
-    --body-padding: 12px;
-    --body-background: #11111180;
-    --border-radius: 4px;
 }
 
 * {
@@ -82,5 +68,5 @@ a:visited:hover span {
 
     text-decoration: underline;
 
-    text-decoration-color: var(--white);
+    text-decoration-color: var(--purple);
 }
