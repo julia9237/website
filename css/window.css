@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Perfect DOS VGA 437 Win";
+    src: url("../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
+}
+
+:root {
+    --black: #000000;
+    --grey: #808080;
+    --maroon: #800000;
+    --red: #ff0000;
+    --green: #008000;
+    --lime: #00ff00;
+    --olive: #808000;
+    --yellow: #ffff00;
+    --navy: #000080;
+    --blue: #0000aa;
+    --purple: #800080;
+    --magenta: #ff00ff;
+    --teal: #008080;
+    --aqua: #00ffff;
+    --silver: #c0c0c0;
+    --white: #ffffff;
+}
+
+.windowBorder {
+    width: 600px;
+    height: 400px;
+    padding: 4px;
+
+    outline: var(--silver) solid 2px;
+    background: var(--silver);
+
+    border: 2px solid var(--white);
+    border-right-color: var(--grey);
+    border-bottom-color: var(--grey);
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.windowBorder > div:not(.notepadContent) {
+    flex-shrink: 0;
+}
+
+.windowTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 8px 0px 8px;
+
+    background-color: var(--blue);
+}
+
+.titleButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titleButton {
+    height: 20px;
+    width: 20px;
+
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    color: var(--black);
+    background: var(--silver);
+
+    border: 2px solid var(--white);
+    border-right-color: var(--grey);
+    border-bottom-color: var(--grey);
+}
+
+.titleButton:last-child {
+    margin-left: 3px;
+}
+
+.optionList {
+    display: flex;
+    align-items: center;
+
+    padding-left: 2px;
+}
+
+.option {
+    color: var(--black);
+
+    margin-right: 18px;
+}
+
+.option,
+.option u {
+    font-size: 16px;
+}
+
+.notepadContent {
+    padding: 0px 4px 0px 4px;
+
+    overflow: scroll;
+
+    flex-grow: 1;
+
+    border: 2px solid var(--grey);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+
+    color: var(--black);
+    background: var(--white);
+}
+
+.notepadLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.notepadBottom {
+    height: 24px;
+
+    margin-top: 4px;
+
+    background: var(--grey);
+}

@@ -1,20 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/* https://fonts.google.com/specimen/Roboto+Mono?preview.text=The%20quick%20brown%20fox%20jumped%20over%20the%20lazy%20dog.%20,%20%2F%20%22%20%27%20%5C&preview.text_type=custom&sidebar.open=true&selection.family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700 */
+@font-face {
+    font-family: "Perfect DOS VGA 437 Win";
+    src: url("../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
+}
 
 :root {
-    --foreground: #e2e2e2;
-    --middleground: #4e4e4e;
-    --background: linear-gradient(
-        0deg,
-        rgba(24, 23, 40, 1) 0%,
-        rgba(55, 55, 65, 1) 100%
-    );
+    --black: #000000;
+    --grey: #808080;
+    --maroon: #800000;
+    --red: #ff0000;
+    --green: #008000;
+    --lime: #00ff00;
+    --olive: #808000;
+    --yellow: #ffff00;
+    --navy: #000080;
+    --blue: #0000aa;
+    --purple: #800080;
+    --magenta: #ff00ff;
+    --teal: #008080;
+    --aqua: #00ffff;
+    --silver: #c0c0c0;
+    --white: #ffffff;
+
+    --highlight: #fff;
+    --locked: #555;
 
     --link-color: #eeaaff;
     --link-background: #2e2e2e;
-    --link-underline-color-hover: #aaeeff;
+    --link-underline-color-hover: #eeeeee;
 
-    --font: "Roboto Mono", monospace;
+    --font: "Perfect DOS VGA 437 Win", monospace;
     --font-size: 24px;
     --font-size-h1: 32px;
     --font-size-mnlnk: 16px; /* ? */
@@ -36,87 +50,37 @@
     font-size: var(--font-size);
 }
 
-canvas {
-    position: fixed;
-    inset: 0px;
-
-    z-index: -999;
-
-    width: 100%;
-    height: 100%;
-}
-
 body {
     width: 100vw;
     height: 100vh;
 
-    color: var(--foreground);
-    background: var(--background);
+    color: var(--white);
+    background: var(--teal);
+
+    position: relative;
 }
 
-#body {
-    border-radius: var(--border-radius);
-
-    display: inline-block;
-    margin: var(--body-margin);
-    padding: var(--body-padding);
-
-    backdrop-filter: blur(10px);
-    background-color: var(--body-background);
+.linkWrapper {
+    display: flex;
 }
 
 a,
-:visited {
-    /* padding: 2px 4px;
-    border-radius: 4px; */
-
+a:visited {
     display: flex;
     align-items: center;
 
     text-decoration: none;
 
-    color: var(--link-color);
+    color: var(--magenta);
 
-    /* background-color: var(--link-background); */
+    /* background-color: var(--purple); */
 }
 
-a:hover,
-:visited:hover {
+a:hover span,
+a:visited:hover span {
     cursor: pointer;
 
     text-decoration: underline;
 
-    text-decoration-color: var(--link-underline-color-hover);
-}
-
-a:hover svg {
-    color: var(--link-underline-color-hover);
-}
-
-a svg {
-    height: var(--font-size);
-    width: var(--font-size);
-
-    margin-right: 4px;
-}
-
-#quote {
-    position: absolute;
-
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: flex-end;
-}
-
-#quote span {
-    display: block;
-}
-
-#quote > span > span {
-    text-align: right;
+    text-decoration-color: var(--white);
 }

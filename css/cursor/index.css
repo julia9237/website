@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+    font-family: "Perfect DOS VGA 437 Win";
+    src: url("../../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
+}
 
 :root {
-    --font: "Roboto Mono", monospace;
+    --font: "Perfect DOS VGA 437 Win", monospace;
 
     --cursor-height: 150px;
     --cursor-padding: 75px;
@@ -12,9 +15,6 @@
     --note-padding: 12px;
 
     --color-search-label: #ffffff;
-    --color-search-bad: #ffaaaa;
-    --color-search-good: #aaffaa;
-    --color-search-none: #eeeeee;
     --color-search-background: #4e4e4e;
     --color-search-input-background: #3e3e3e;
 
