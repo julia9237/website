@@ -43,6 +43,11 @@
     transform: translate(-50%, -50%);
 }
 
+.windowTitle,
+.optionList {
+    user-select: none;
+}
+
 .windowBorder > div:not(.notepadContent) {
     flex-shrink: 0;
 }
