@@ -1,147 +1,154 @@
 @font-face {
-    font-family: "Perfect DOS VGA 437 Win";
-    src: url("../../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
+	font-family: "Perfect DOS VGA 437 Win";
+	src: url("../../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
 }
 
 :root {
-    --font: "Perfect DOS VGA 437 Win", monospace;
+	--black: #000000;
+	--grey: #808080;
+	--maroon: #800000;
+	--red: #ff0000;
+	--green: #008000;
+	--lime: #00ff00;
+	--olive: #808000;
+	--yellow: #ffff00;
+	--navy: #000080;
+	--blue: #0000aa;
+	--purple: #800080;
+	--magenta: #ff00ff;
+	--teal: #008080;
+	--aqua: #00ffff;
+	--silver: #c0c0c0;
+	--white: #ffffff;
 
-    --cursor-height: 150px;
-    --cursor-padding: 75px;
+	--font: "Perfect DOS VGA 437 Win", monospace;
+	--font-size: 24px;
 
-    --body-padding: 6px;
-    --search-padding: 4px;
-    --search-input-padding: 2px;
-    --note-padding: 12px;
+	--cursor-height: 200px;
+	--cursor-padding: 75px;
 
-    --color-search-label: #ffffff;
-    --color-search-background: #4e4e4e;
-    --color-search-input-background: #3e3e3e;
-
-    --color-scrollbar-thumb: #aaeeff;
-    --color-scrollbar-track: #363636;
-
-    --color-cursor-text: #eeeeee;
-    --color-cursor-border: #eeaaffaf;
-    --color-background: #2e2e2e;
+	--search-padding: 4px;
+	--search-input-padding: 2px;
+	--note-padding: 12px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    font-family: var(--font);
+	font-family: var(--font);
 
-    box-sizing: border-box;
+	box-sizing: border-box;
 
-    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
-    scrollbar-width: thin;
+	scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+	scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
-    width: var(--body-padding);
+	width: var(--body-padding);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-scrollbar-thumb);
+	background-color: var(--color-scrollbar-thumb);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--color-scrollbar-track);
+	background-color: var(--color-scrollbar-track);
 }
 
 body {
-    overflow-x: hidden;
-
-    background-color: var(--color-background);
-
-    padding: var(--body-padding);
-    padding-right: 0px;
+	background-color: var(--teal);
 }
 
 #search {
-    position: fixed;
+	position: fixed;
 
-    top: 0px;
-    right: 0px;
+	top: 0px;
+	right: 0px;
 
-    padding: var(--search-padding);
+	padding: var(--search-padding);
 
-    z-index: 999;
+	z-index: 999;
 
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);
-    background-color: var(--color-search-background);
+	box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.7);
+	background-color: var(--teal);
 }
 
 #search-label {
-    color: #ffffff;
+	color: var(--white);
 }
 
 #search-input {
-    color: var(--color-search-none);
+	color: var(--color-search-none);
 
-    padding: var(--search-input-padding);
+	padding: var(--search-input-padding);
 
-    outline: none;
-    border: solid 2px;
+	outline: none;
+	border: solid 2px;
 
-    background-color: var(--color-search-input-background);
+	background-color: var(--grey);
 }
 
 ::-webkit-search-cancel-button {
-    display: none;
+	display: none;
+}
+
+.cursor-list {
+	display: grid;
+
+	grid-template-columns: repeat(7, 1fr);
 }
 
 .cursor {
-    width: auto;
-    height: var(--cursor-height);
+	height: 20vh;
 
-    position: relative;
+	position: relative;
 
-    color: var(--color-cursor-text);
-    background-color: transparent;
+	text-align: center;
 
-    padding-left: var(--cursor-padding);
+	color: var(--white);
+	background-color: transparent;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 
-    border: 4px dashed var(--color-cursor-border);
-}
-
-.cursor:not(:last-child) {
-    border-bottom: none;
+	border: 2px solid;
+	border-color: var(--silver) var(--grey) var(--grey) var(--silver);
 }
 
 .note {
-    color: #aaaaaa;
+	display: none;
 
-    position: absolute;
+	color: var(--silver);
 
-    right: 0px;
-    bottom: 0px;
+	text-align: left;
 
-    white-space: normal;
+	position: absolute;
 
-    margin: var(--note-padding);
+	left: 0px;
+	bottom: 0px;
+
+	white-space: normal;
+
+	margin: var(--note-padding);
 }
 
 .note::before {
-    content: "Note: ";
+	content: "Note: ";
 
-    color: #ffaaaa;
+	color: var(--red);
 }
 
 a,
 a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover,
 avisited:hover {
-    cursor: pointer;
+	cursor: pointer;
 
-    text-decoration: underline;
-    text-decoration-color: #ffaaaa;
+	text-decoration: underline;
+	text-decoration-color: var(--maroon);
 }
