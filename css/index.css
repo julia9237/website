@@ -1,72 +1,72 @@
 @font-face {
-    font-family: "Perfect DOS VGA 437 Win";
-    src: url("../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
+	font-family: "Perfect DOS VGA 437 Win";
+	src: url("../font/Perfect\ DOS\ VGA\ 437\ Win.ttf");
 }
 
 :root {
-    --black: #000000;
-    --grey: #808080;
-    --maroon: #800000;
-    --red: #ff0000;
-    --green: #008000;
-    --lime: #00ff00;
-    --olive: #808000;
-    --yellow: #ffff00;
-    --navy: #000080;
-    --blue: #0000aa;
-    --purple: #800080;
-    --magenta: #ff00ff;
-    --teal: #008080;
-    --aqua: #00ffff;
-    --silver: #c0c0c0;
-    --white: #ffffff;
+	--black: #000000;
+	--grey: #808080;
+	--maroon: #800000;
+	--red: #ff0000;
+	--green: #008000;
+	--lime: #00ff00;
+	--olive: #808000;
+	--yellow: #ffff00;
+	--navy: #000080;
+	--blue: #0000aa;
+	--purple: #800080;
+	--magenta: #ff00ff;
+	--teal: #008080;
+	--aqua: #00ffff;
+	--silver: #c0c0c0;
+	--white: #ffffff;
 
-    --font: "Perfect DOS VGA 437 Win", monospace;
-    --font-size: 24px;
+	--font: "Perfect DOS VGA 437 Win", monospace;
+	--font-size: 24px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    overflow: hidden;
-    box-sizing: border-box;
+	overflow: hidden;
+	box-sizing: border-box;
 
-    font-family: var(--font);
-    font-size: var(--font-size);
+	font-family: var(--font);
+	font-size: var(--font-size);
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+	width: 100vw;
+	height: 100vh;
 
-    color: var(--white);
-    background: var(--teal);
+	color: var(--white);
+	background: var(--teal);
 
-    position: relative;
+	position: relative;
 }
 
 .linkWrapper {
-    display: flex;
+	display: flex;
 }
 
 a,
 a:visited {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 
-    text-decoration: none;
+	text-decoration: none;
 
-    color: var(--magenta);
+	color: var(--magenta);
 
-    /* background-color: var(--purple); */
+	/* background-color: var(--purple); */
 }
 
 a:hover span,
 a:visited:hover span {
-    cursor: pointer;
+	cursor: pointer;
 
-    text-decoration: underline;
+	text-decoration: underline;
 
-    text-decoration-color: var(--purple);
+	text-decoration-color: var(--purple);
 }
