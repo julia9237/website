@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document)
 
 $(".dialogOk").addEventListener("click", () => {
-  window.location.href = "eyesore.iamhorny.help"
+  window.location = "eyesore.iamhorny.help"
 })
 
 $(".dialogCancel").addEventListener("click", () => {
