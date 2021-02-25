@@ -9,11 +9,26 @@
 		<meta property="og:title" content="a cool website" />
 		<meta property="og:url" content="https://iamhorny.help/" />
 
+        <script src="js/dialogButtons.js" defer></script>
+
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/window.css" />
 	</head>
 	<body>
-		<div class="windowBorder">
+        <div class="windowBorder dialogWindow topmost" id="dialogNewPage">
+			<div class="windowTitle windowTitleCenter">
+				New website!
+			</div>
+            <div class="dialogContent">
+                <div class="dialogText"><span>A new version of the website is available!<br>Would you like to go there?</span></div>
+                <div class="dialogButtons">
+                    <button class="dialogOk"><span>Okay</span></button>
+                    <button class="dialogCancel"><span>Cancel</span></button>
+                </div>
+            </div>
+        </div>
+        
+		<div class="windowBorder notepadWindow">
 			<div class="windowTitle">
 				Untitled - Notepad
 				<div class="titleButtons">
@@ -64,7 +79,8 @@ links:
 	<a href="https://github.com/julia-girl/website">
 		<span>CODE</span>
 	</a>
-</div></div>
+    </div>
+</div>
 </pre>
 			</div>
 			<!-- <div class="notepadBottom"></div> -->
